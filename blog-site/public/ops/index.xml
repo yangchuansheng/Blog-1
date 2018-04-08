@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ops on devops007</title>
+    <link>https://linuxer.io/ops/</link>
+    <description>Recent content in Ops on devops007</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>caming101006@gmail.com (aiming.cao)</managingEditor>
+    <webMaster>caming101006@gmail.com (aiming.cao)</webMaster>
+    <lastBuildDate>Sun, 08 Apr 2018 15:59:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://linuxer.io/ops/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>测试</title>
+      <link>https://linuxer.io/ops/nitro/</link>
+      <pubDate>Sun, 08 Apr 2018 15:59:40 +0800</pubDate>
+      <author>caming101006@gmail.com (aiming.cao)</author>
+      <guid>https://linuxer.io/ops/nitro/</guid>
+      <description>Nitro Quick and easy performance analyzer library for Go.
+Overview Nitro is a quick and easy performance analyzer library for Go. It is useful for comparing A/B against different drafts of functions or different functions.
+Implementing Nitro Using Nitro is simple. First, use go get to install the latest version of the library.
+$ go get github.com/spf13/nitro  Next, include nitro in your application.</description>
+    </item>
+    
+    <item>
+      <title>微服务管理框架service mesh——istio安装笔记</title>
+      <link>https://linuxer.io/ops/new/</link>
+      <pubDate>Thu, 01 Jun 2017 20:18:57 +0800</pubDate>
+      <author>caming101006@gmail.com (aiming.cao)</author>
+      <guid>https://linuxer.io/ops/new/</guid>
+      <description>Nitro Quick and easy performance analyzer library for Go.
+Overview Nitro is a quick and easy performance analyzer library for Go. It is useful for comparing A/B against different drafts of functions or different functions.
+Implementing Nitro Using Nitro is simple. First, use go get to install the latest version of the library.
+$ go get github.com/spf13/nitro  Next, include nitro in your application.</description>
+    </item>
+    
+  </channel>
+</rss>
