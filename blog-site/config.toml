@@ -1,0 +1,169 @@
+baseurl = "https://linuxer.io/"
+DefaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "zh-cn"
+title = "devops007"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = false
+pygmentCodeFences = true
+#googleAnalytics = "XXX"
+
+[Params]
+hello = "Hi,I'm aiming.cao"
+subtitle = "person blog"
+logo = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/avatar-icon.png"
+favicon = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/favicon.ico"
+dateFormat = "January 2, 2006"
+commit = false
+rss = true
+#comments = true
+#sharebutton = true
+algolia = "d2134c5a8d250e6d3246594240c45201" # API key
+#gcse = "012737790962522169780:fd1izxsfgrs" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+description = "linuxer.io|曹爱明的博客|devops"
+errorpage = "https://res.cloudinary.com/jimmysong/image/upload/images/404-not-found-cat.png"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/jimmysong/image/upload/banners/keuc-cncf.jpg"
+desc = "KEUC - China Kubernetes End User Conference 2017"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/jimmysong/image/upload/banners/kubernetes-meetup-china-20170826.jpg"
+desc = "Kubernetes Beijing fans meetup - Aug 28,2017"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/jimmysong/image/upload/banners/cloud-computing.jpg"
+desc = "Democratizing the Cloud Computing for every one"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/jimmysong/image/upload/banners/great-wall-01.jpg"
+desc = "Insight throught the Great Wall to the world"
+
+[[Params.bigimg]]
+src = "https://res.cloudinary.com/jimmysong/image/upload/banners/big-data-1.jpg"
+desc = "Using Big Data to make business decision"
+
+[Author]
+  name = "Aiming Cao(曹爱明)"
+  website = "https://linuxer.io"
+  email = "xxx"
+  facebook = "xxx"
+  googleplus = "+xxxxx" # or xxxxxxxxxxxxxxxxxxxxx
+  github = "devops007"
+  twitter = "xxx"
+  linkedin = "xxx"
+  500px = "xxx"
+  medium = "xxx"
+  instagram = "xxx"
+  weibo = "xxx"
+
+[[menu.main]]
+    identifier = "Devolop"
+    name = "Devolop"
+    weight = 2
+
+[[menu.main]]
+    parent = "Devolop"
+    name = "Python3"
+    url = "categories/python3"
+    weight = 2
+
+[[menu.main]]
+    parent = "Devolop"
+    name = "Golang"
+    url = "categories/golang"
+    weight = 3
+
+[[menu.main]]
+    parent = "Devolop"
+    name = "Linux C/C++"
+    url = "categories/linux-c"
+    weight = 1
+
+[[menu.main]]
+    parent = "Devolop"
+    name = "Shell"
+    url = "categories/shell"
+    weight = 4
+
+[[menu.main]]
+    parent = "Devolop"
+    name = "Awk&Sed"
+    url = "categories/awk-sed"
+    weight = 5
+
+[[menu.main]]
+    parent = "Devolop"
+    name = "Lua"
+    url = "categories/lua"
+    weight = 6
+
+[[menu.main]]
+    parent = "Devolop"
+    name = "设计模式"
+    url = "categories/design-patterns"
+    weight = 7
+
+[[menu.main]]
+    identifier = "System"
+    name = "System"
+    weight = 3
+
+[[menu.main]]
+    parent = "System"
+    name = "Redhat"
+    url = "categories/redhat"
+    weight = 1
+
+[[menu.main]]
+    parent = "System"
+    name = "Centos"
+    url = "categories/centos"
+    weight = 2
+
+[[menu.main]]
+    parent = "System"
+    name = "Fedora"
+    url = "categories/fedora"
+    weight = 3
+
+[[menu.main]]
+    parent = "System"
+    name = "Opensuse"
+    url = "categories/opensuse"
+    weight = 4
+
+[[menu.main]]
+    parent = "System"
+    name = "Ubuntu"
+    url = "categories/ubuntu"
+    weight = 5
+
+[[menu.main]]
+    parent = "System"
+    name = "FreeBSD"
+    url = "categories/freebsd"
+    weight = 6
+
+
+[[menu.main]]
+    name = "About"
+    url = "about"
+    weight = 1
+
+[[menu.main]]
+    name = "Algorithm"
+    url = "/algorithm/"
+    weight = 4
+
+[[menu.main]]
+    name = "Ops"
+    url = "/ops/"
+    weight = 5
+
+[[menu.main]]
+    name = "Tags"
+    url = "tags"
+    weight = 6
+
