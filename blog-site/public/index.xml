@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops007</title>
+    <link>https://linuxer.io/</link>
+    <description>Recent content on devops007</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>xxx (Aiming Cao(曹爱明))</managingEditor>
+    <webMaster>xxx (Aiming Cao(曹爱明))</webMaster>
+    <lastBuildDate>Wed, 20 Sep 2017 21:56:04 +0800</lastBuildDate>
+    
+	<atom:link href="https://linuxer.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>什么是Service Mesh（服务网格）</title>
+      <link>https://linuxer.io/posts/20180409/</link>
+      <pubDate>Wed, 20 Sep 2017 21:56:04 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/20180409/</guid>
+      <description>Service mesh 又译作 “服务网格”，作为服务间通信的基础设施层。Buoyant 公司的 CEO Willian Morgan 在他的这篇文章 WHAT’S A SERVICE MESH? AND WHY DO I NEED ONE? 中解释了什么是 Service M</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://linuxer.io/about/</link>
+      <pubDate>Sat, 18 Mar 2017 20:53:54 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/about/</guid>
+      <description>Info Aiming Cao（曹爱明） Xi&amp;rsquo;an, China 🇨🇳 Xi&amp;rsquo;an University of Posts&amp;amp;Telecommunications（西安邮电大学） Major in Software Engineering Career aispeech（思必驰</description>
+    </item>
+    
+  </channel>
+</rss>
