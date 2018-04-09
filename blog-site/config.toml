@@ -11,38 +11,25 @@ pygmentCodeFences = true
 
 [Params]
 hello = "Hi,I'm aiming.cao"
-subtitle = "person blog"
-logo = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/avatar-icon.png"
-favicon = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/favicon.ico"
+subtitle = "A wolf from northern China 🇨🇳"
+logo = "https://res.cloudinary.com/devops007/image/upload/v1523253437/me.jpg"
+#favicon = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/favicon.ico"
 dateFormat = "January 2, 2006"
 commit = false
 rss = true
-#comments = true
+comments = true
 #sharebutton = true
 algolia = "d2134c5a8d250e6d3246594240c45201" # API key
 #gcse = "012737790962522169780:fd1izxsfgrs" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 description = "linuxer.io|曹爱明的博客|devops"
 errorpage = "https://res.cloudinary.com/jimmysong/image/upload/images/404-not-found-cat.png"
 
-[[Params.bigimg]]
-src = "https://res.cloudinary.com/jimmysong/image/upload/banners/keuc-cncf.jpg"
-desc = "KEUC - China Kubernetes End User Conference 2017"
 
 [[Params.bigimg]]
-src = "https://res.cloudinary.com/jimmysong/image/upload/banners/kubernetes-meetup-china-20170826.jpg"
-desc = "Kubernetes Beijing fans meetup - Aug 28,2017"
+src = "https://res.cloudinary.com/devops007/image/upload/v1523266902/Wolf.jpg"
+desc = "Wolf - North of China -Apr 9 2018"
 
-[[Params.bigimg]]
-src = "https://res.cloudinary.com/jimmysong/image/upload/banners/cloud-computing.jpg"
-desc = "Democratizing the Cloud Computing for every one"
 
-[[Params.bigimg]]
-src = "https://res.cloudinary.com/jimmysong/image/upload/banners/great-wall-01.jpg"
-desc = "Insight throught the Great Wall to the world"
-
-[[Params.bigimg]]
-src = "https://res.cloudinary.com/jimmysong/image/upload/banners/big-data-1.jpg"
-desc = "Using Big Data to make business decision"
 
 [Author]
   name = "Aiming Cao(曹爱明)"
