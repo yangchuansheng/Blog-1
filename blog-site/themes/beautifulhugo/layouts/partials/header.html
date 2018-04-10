@@ -3,6 +3,7 @@
   {{ if .Site.Params.subtitle }}{{ $.Scratch.Set "subtitle" .Site.Params.subtitle }}{{ end }}
   {{ if .Site.Params.hello}}{{ $.Scratch.Set "hello" .Site.Params.hello}}{{ end }}
   {{ if .Site.Params.bigimg }}{{ $.Scratch.Set "bigimg" .Site.Params.bigimg }}{{ end }}
+  {{ if .Site.Params.flag }}{{ $.Scratch.Set "flag" .Site.Params.flag }}{{ end }}
 {{ else }}
   {{ $.Scratch.Set "title" .Title }}
   {{ if .Params.subtitle }}{{ $.Scratch.Set "subtitle" .Params.subtitle }}{{ end }}
@@ -20,6 +21,7 @@
       <div class="intro-header big-img">
         {{ $subtitle := $.Scratch.Get "subtitle" }}
         {{ $hello:= $.Scratch.Get "hello" }}
+        {{ $flag:= $.Scratch.Get "flag" }}
         <div class="container">
           <div class="row">
               <div class="col-lg-12 col-md-12 col-md-offset-0">
@@ -40,7 +42,13 @@
                   {{ if $subtitle }}
                   {{if .IsHome}}
                     <hr class="small">
-                    <span class="page-subheading">{{ $subtitle }}</span>
+                    <span class="page-subheading">{{ $subtitle }}
+                        <span>
+                            <div style="display:inline-block;overflow:hidden;">
+                                <img src="https://res.cloudinary.com/devops007/image/upload/v1523324901/china-flag.png">
+                            </div>
+                        </span>
+                    </span>
                   {{ else }}
                     {{ if eq .Type "posts" }}
                       <hr class="small">

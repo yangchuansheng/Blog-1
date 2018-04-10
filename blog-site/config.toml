@@ -11,7 +11,8 @@ pygmentCodeFences = true
 
 [Params]
 hello = "Hi,I'm aiming.cao"
-subtitle = "A wolf from northern China 🇨🇳"
+subtitle = "A wolf from northern China"
+flag = "🇨🇳"
 logo = "https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png"
 #favicon = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/favicon.ico"
 dateFormat = "January 2, 2006"
