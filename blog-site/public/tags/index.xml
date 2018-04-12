@@ -8,17 +8,44 @@
     <language>zh-cn</language>
     <managingEditor>xxx (Aiming Cao(曹爱明))</managingEditor>
     <webMaster>xxx (Aiming Cao(曹爱明))</webMaster>
-    <lastBuildDate>Wed, 20 Sep 2017 21:56:04 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 11 Apr 2018 20:50:21 +0800</lastBuildDate>
     
 	<atom:link href="https://linuxer.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Centos</title>
+      <link>https://linuxer.io/tags/centos/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/tags/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cloud Native</title>
       <link>https://linuxer.io/tags/cloud-native/</link>
-      <pubDate>Wed, 20 Sep 2017 21:56:04 +0800</pubDate>
+      <pubDate>Mon, 09 Apr 2018 21:56:04 +0800</pubDate>
       <author>xxx (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/tags/cloud-native/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compiz Fusion</title>
+      <link>https://linuxer.io/tags/compiz-fusion/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/tags/compiz-fusion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fedora</title>
+      <link>https://linuxer.io/tags/fedora/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/tags/fedora/</guid>
       <description></description>
     </item>
     
@@ -32,9 +59,27 @@
     </item>
     
     <item>
+      <title>Opensuse</title>
+      <link>https://linuxer.io/tags/opensuse/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/tags/opensuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redhat</title>
+      <link>https://linuxer.io/tags/redhat/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/tags/redhat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Service Mesh</title>
       <link>https://linuxer.io/tags/service-mesh/</link>
-      <pubDate>Wed, 20 Sep 2017 21:56:04 +0800</pubDate>
+      <pubDate>Mon, 09 Apr 2018 21:56:04 +0800</pubDate>
       <author>xxx (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/tags/service-mesh/</guid>
       <description></description>
