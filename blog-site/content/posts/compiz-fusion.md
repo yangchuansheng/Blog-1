@@ -1,12 +1,11 @@
 ---
 title: "如何在Linux桌面上养鱼"
 date: 2018-04-11T20:50:21+08:00
-draft: true
+draft: false
 categories: "Fedora Opensuse Redhat Centos"
 tags: ["compiz-fusion","fedora", "opensuse", "redhat", "centos"]
 bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523547959/basketball.jpg", desc: "苏州微软篮球对抗赛 Apr 10,2018"}]
 slug: "20180411"
-draft: false
 ---
 
 &emsp;&emsp;[Compiz](http://wiki.compiz.org/) 是第一个由 [OpenGL](https://zh.wikipedia.org/wiki/OpenGL)
@@ -68,9 +67,11 @@ draft: false
    ```
 
 ## 配置
-- [X] `Settings Manager for Compiz`(CompizCMM) 特效配置
+- [X] `CompizConfig Settings Manager`(CompizCMM) 特效配置
 - [ ] `Compiz Start` 控制3D特效启动与关闭
 - [ ] `Compiz Fusion Icon` 功能与Compiz Start功能一样，控制启动
+
+![Software](https://res.cloudinary.com/devops007/image/upload/v1523300794/compiz.png)
 
 &emsp;&emsp;接下来重点介绍一下,立体鱼缸与平面鱼缸的配置，立体鱼缸呢就是桌面呈现立方体形状，鱼儿在鱼缸中心点活跃，看起来里离自己比较远，可以旋转(Ctrl+Alt+方向键）,
 平面鱼缸就像上面那样，虽然没有鱼缸效果，但是鱼儿仍然是立体的，效果更逼真一点，最大的优点是平面状态，鱼儿始终在屏幕最前方，也就是说不管你是浏览网页，还是

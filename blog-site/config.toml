@@ -14,7 +14,7 @@ hello = "Hi,I'm aiming.cao"
 subtitle = "A wolf from northern China"
 flag = "🇨🇳"
 logo = "https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png"
-#favicon = "https://res.cloudinary.com/jimmysong/raw/upload/rootsongjc-hugo/favicon.ico"
+favicon = "https://res.cloudinary.com/devops007/image/upload/v1523583145/Linux.png"
 dateFormat = "January 2, 2006"
 commit = false
 rss = true
@@ -22,7 +22,7 @@ comments = true
 #sharebutton = true
 algolia = "d2134c5a8d250e6d3246594240c45201" # API key
 #gcse = "012737790962522169780:fd1izxsfgrs" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
-description = "linuxer.io|曹爱明的博客|devops"
+description = "linuxer.io|devops007"
 errorpage = "https://res.cloudinary.com/jimmysong/image/upload/images/404-not-found-cat.png"
 
 
