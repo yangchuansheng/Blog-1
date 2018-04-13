@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Centos</title>
+      <link>https://linuxer.io/categories/centos/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/categories/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cloud Native</title>
       <link>https://linuxer.io/categories/cloud-native/</link>
       <pubDate>Mon, 09 Apr 2018 21:56:04 +0800</pubDate>
@@ -22,11 +31,38 @@
     </item>
     
     <item>
-      <title>Fedora Opensuse Redhat Centos</title>
-      <link>https://linuxer.io/categories/fedora-opensuse-redhat-centos/</link>
+      <title>Fedora</title>
+      <link>https://linuxer.io/categories/fedora/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
       <author>xxx (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/categories/fedora-opensuse-redhat-centos/</guid>
+      <guid>https://linuxer.io/categories/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opensuse</title>
+      <link>https://linuxer.io/categories/opensuse/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/categories/opensuse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redhat</title>
+      <link>https://linuxer.io/categories/redhat/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/categories/redhat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ubuntu</title>
+      <link>https://linuxer.io/categories/ubuntu/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>xxx (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/categories/ubuntu/</guid>
       <description></description>
     </item>
     

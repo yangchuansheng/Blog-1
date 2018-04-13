@@ -28,19 +28,25 @@
   </url>
   
   <url>
+    <loc>https://linuxer.io/categories/centos/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://linuxer.io/tags/centos/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linuxer.io/tags/cloud-native/</loc>
+    <loc>https://linuxer.io/categories/cloud-native/</loc>
     <lastmod>2018-04-09T21:56:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/cloud-native/</loc>
+    <loc>https://linuxer.io/tags/cloud-native/</loc>
     <lastmod>2018-04-09T21:56:04+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -52,13 +58,13 @@
   </url>
   
   <url>
-    <loc>https://linuxer.io/tags/fedora/</loc>
+    <loc>https://linuxer.io/categories/fedora/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/fedora-opensuse-redhat-centos/</loc>
+    <loc>https://linuxer.io/tags/fedora/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -70,6 +76,12 @@
   </url>
   
   <url>
+    <loc>https://linuxer.io/categories/opensuse/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://linuxer.io/tags/opensuse/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
@@ -77,6 +89,12 @@
   
   <url>
     <loc>https://linuxer.io/posts/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/redhat/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -95,6 +113,12 @@
   
   <url>
     <loc>https://linuxer.io/tags/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/ubuntu/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>

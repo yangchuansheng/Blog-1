@@ -2,7 +2,7 @@
 title: "如何在Linux桌面上养鱼"
 date: 2018-04-11T20:50:21+08:00
 draft: false
-categories: "Fedora Opensuse Redhat Centos"
+categories: ["fedora", "opensuse", "ubuntu", "centos", "redhat"] 
 tags: ["compiz-fusion","fedora", "opensuse", "redhat", "centos"]
 bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523547959/basketball.jpg", desc: "苏州微软篮球对抗赛 Apr 10,2018"}]
 slug: "20180411"
