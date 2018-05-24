@@ -2,10 +2,9 @@
 title: "如何在Linux桌面上养鱼"
 date: 2018-04-11T20:50:21+08:00
 draft: false
-categories: ["fedora", "opensuse", "ubuntu", "centos", "redhat"] 
+categories: ["fedora", "opensuse", "ubuntu", "centos", "redhat"]
 tags: ["compiz-fusion","fedora", "opensuse", "redhat", "centos"]
 bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523547959/basketball.jpg", desc: "苏州微软篮球对抗赛 Apr 10,2018"}]
-slug: "20180411"
 ---
 
 &emsp;&emsp;[Compiz](http://wiki.compiz.org/) 是第一个由 [OpenGL](https://zh.wikipedia.org/wiki/OpenGL)
@@ -17,7 +16,8 @@ slug: "20180411"
 
 ![compiz](https://res.cloudinary.com/devops007/image/upload/v1523446334/cube2.png)
 
-我们以Fedora系统举例演示，先看一下最终的养鱼效果图,在vim编辑代码的时候鱼儿仍然置于最前端：
+# 最终效果展示
+&emsp;&emsp;我们以Fedora系统举例演示，先看一下最终的养鱼效果图,在vim编辑代码的时候鱼儿仍然置于最前端：
 
 ![fish](https://res.cloudinary.com/devops007/image/upload/v1523446219/myFish.gif)
 
@@ -107,4 +107,5 @@ slug: "20180411"
 ## 参考
 
 - [compiz-wiki Archlinux 中文社区](https://wiki.archlinux.org/index.php/Compiz_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)) <br><br><br>
+
 

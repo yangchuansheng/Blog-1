@@ -6,29 +6,38 @@
     <description>Recent content in Posts on devops007</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>xxx (Aiming Cao(曹爱明))</managingEditor>
-    <webMaster>xxx (Aiming Cao(曹爱明))</webMaster>
-    <lastBuildDate>Wed, 11 Apr 2018 20:50:21 +0800</lastBuildDate>
+    <managingEditor>caming101006@gmail.com (Aiming Cao(曹爱明))</managingEditor>
+    <webMaster>caming101006@gmail.com (Aiming Cao(曹爱明))</webMaster>
+    <lastBuildDate>Thu, 24 May 2018 11:15:23 +0800</lastBuildDate>
     
 	<atom:link href="https://linuxer.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>如何在Linux桌面上养鱼</title>
-      <link>https://linuxer.io/posts/20180411/</link>
-      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/posts/20180411/</guid>
-      <description>&amp;emsp;&amp;emsp;Compiz 是第一个由 OpenGL 驱动的运行于 X Window System 上的混合窗口管理器 。 Compiz的混合渲染能力使其可以在窗口管理过程中实现多种视觉效果，比如在矩形虚拟桌面上</description>
+      <title>为Hugo设计搜索框</title>
+      <link>https://linuxer.io/posts/hugo-search/</link>
+      <pubDate>Thu, 24 May 2018 11:15:23 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/hugo-search/</guid>
+      <description>&amp;emsp;&amp;emsp;网上对于beautifulhugo主题的搜索框千篇一律，都是基于modal做的，在了解了algolia插件搜索的AP</description>
     </item>
     
     <item>
-      <title>什么是Service Mesh（服务网格）</title>
-      <link>https://linuxer.io/posts/20180409/</link>
-      <pubDate>Mon, 09 Apr 2018 21:56:04 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/posts/20180409/</guid>
-      <description>Service mesh 又译作 “服务网格”，作为服务间通信的基础设施层。Buoyant 公司的 CEO Willian Morgan 在他的这篇文章 WHAT’S A SERVICE MESH? AND WHY DO I NEED ONE? 中解释了什么是 Service M</description>
+      <title>为Hugo重新渲染Toc目录样式</title>
+      <link>https://linuxer.io/posts/hugo-toc/</link>
+      <pubDate>Wed, 23 May 2018 19:33:47 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/hugo-toc/</guid>
+      <description>&amp;emsp;&amp;emsp;Hugo的皮肤beautifulhugo自带的目录不是很美观，因此我们对{{.TableOfContents}}的模</description>
+    </item>
+    
+    <item>
+      <title>如何在Linux桌面上养鱼</title>
+      <link>https://linuxer.io/posts/compiz-fusion/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/compiz-fusion/</guid>
+      <description>&amp;emsp;&amp;emsp;Compiz 是第一个由 OpenGL 驱动的运行于 X Window System 上的混合窗口管理器 。 Compiz的混合渲染能力使其可以在窗口管理过程中实现多种视觉效果，比如在矩形虚拟桌面上</description>
     </item>
     
   </channel>

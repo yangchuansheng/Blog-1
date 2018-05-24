@@ -1,0 +1,13 @@
+---
+baseurl: "/"
+DefaultContentLanguage: "zh-cn"
+hasCJKLanguage: true
+languageCode: "zh-cn"
+title: "Linuxer's Site"
+theme: "beautifulhugo"
+metaDataFormat: "yaml"
+algolia:
+  index: "devops-007-blog"
+  key: "caeb7783d77901e99d2e2a25a50014d6"
+  appID: "15QMKYAH3C"
+---

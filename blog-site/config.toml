@@ -20,7 +20,8 @@ commit = false
 rss = true
 comments = true
 #sharebutton = true
-algolia = "d2134c5a8d250e6d3246594240c45201" # API key
+algolia = "1eb3f0035ce908e604a469c3d87fdf44" # API key
+LivereShortname = "MTAyMC8zNjc1MC8xMzI4NQ==" # LivereShortname
 #gcse = "012737790962522169780:fd1izxsfgrs" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 description = "linuxer.io|devops007"
 errorpage = "https://res.cloudinary.com/jimmysong/image/upload/images/404-not-found-cat.png"
@@ -35,7 +36,7 @@ desc = "Wolf - North of China -Apr 9 2018"
 [Author]
   name = "Aiming Cao(曹爱明)"
   website = "https://linuxer.io"
-  email = "xxx"
+  email = "caming101006@gmail.com"
   facebook = "xxx"
   googleplus = "+xxxxx" # or xxxxxxxxxxxxxxxxxxxxx
   github = "devops007"
@@ -146,8 +147,8 @@ desc = "Wolf - North of China -Apr 9 2018"
     weight = 4
 
 [[menu.main]]
-    name = "Ops"
-    url = "/ops/"
+    name = "Hugo"
+    url = "/hugo/"
     weight = 5
 
 [[menu.main]]

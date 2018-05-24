@@ -6,8 +6,8 @@
     <description>Recent content in Categories on devops007</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>xxx (Aiming Cao(曹爱明))</managingEditor>
-    <webMaster>xxx (Aiming Cao(曹爱明))</webMaster>
+    <managingEditor>caming101006@gmail.com (Aiming Cao(曹爱明))</managingEditor>
+    <webMaster>caming101006@gmail.com (Aiming Cao(曹爱明))</webMaster>
     
 	<atom:link href="https://linuxer.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,17 +16,8 @@
       <title>Centos</title>
       <link>https://linuxer.io/categories/centos/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/categories/centos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cloud Native</title>
-      <link>https://linuxer.io/categories/cloud-native/</link>
-      <pubDate>Mon, 09 Apr 2018 21:56:04 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/categories/cloud-native/</guid>
       <description></description>
     </item>
     
@@ -34,8 +25,17 @@
       <title>Fedora</title>
       <link>https://linuxer.io/categories/fedora/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/categories/fedora/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://linuxer.io/categories/hugo/</link>
+      <pubDate>Thu, 24 May 2018 11:15:23 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/categories/hugo/</guid>
       <description></description>
     </item>
     
@@ -43,7 +43,7 @@
       <title>Opensuse</title>
       <link>https://linuxer.io/categories/opensuse/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/categories/opensuse/</guid>
       <description></description>
     </item>
@@ -52,7 +52,7 @@
       <title>Redhat</title>
       <link>https://linuxer.io/categories/redhat/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/categories/redhat/</guid>
       <description></description>
     </item>
@@ -61,7 +61,7 @@
       <title>Ubuntu</title>
       <link>https://linuxer.io/categories/ubuntu/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/categories/ubuntu/</guid>
       <description></description>
     </item>

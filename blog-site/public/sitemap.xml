@@ -3,13 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://linuxer.io/posts/20180411/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <loc>https://linuxer.io/posts/hugo-search/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://linuxer.io/posts/20180409/</loc>
-    <lastmod>2018-04-09T21:56:04+08:00</lastmod>
+    <loc>https://linuxer.io/posts/hugo-toc/</loc>
+    <lastmod>2018-05-23T19:33:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/posts/compiz-fusion/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
   </url>
   
   <url>
@@ -19,17 +24,23 @@
   
   <url>
     <loc>https://linuxer.io/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/</loc>
+    <loc>https://linuxer.io/tags/algolia/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/centos/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <loc>https://linuxer.io/tags/beautifulhugo/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/</loc>
     <priority>0</priority>
   </url>
   
@@ -40,25 +51,13 @@
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/cloud-native/</loc>
-    <lastmod>2018-04-09T21:56:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/tags/cloud-native/</loc>
-    <lastmod>2018-04-09T21:56:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/tags/compiz-fusion/</loc>
+    <loc>https://linuxer.io/categories/centos/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/fedora/</loc>
+    <loc>https://linuxer.io/tags/compiz-fusion/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -70,14 +69,26 @@
   </url>
   
   <url>
-    <loc>https://linuxer.io/tags/me/</loc>
-    <lastmod>2017-03-18T20:53:54+08:00</lastmod>
+    <loc>https://linuxer.io/categories/fedora/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/opensuse/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <loc>https://linuxer.io/tags/hugo/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/hugo/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/me/</loc>
+    <lastmod>2017-03-18T20:53:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -88,7 +99,19 @@
   </url>
   
   <url>
+    <loc>https://linuxer.io/categories/opensuse/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://linuxer.io/posts/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/redhat/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -100,20 +123,20 @@
   </url>
   
   <url>
-    <loc>https://linuxer.io/tags/redhat/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/tags/service-mesh/</loc>
-    <lastmod>2018-04-09T21:56:04+08:00</lastmod>
+    <loc>https://linuxer.io/tags/search/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://linuxer.io/tags/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/toc/</loc>
+    <lastmod>2018-05-23T19:33:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   

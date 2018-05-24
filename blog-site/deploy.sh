@@ -32,3 +32,5 @@ git commit -m "$msg"
 git push origin master
 
 cd ../
+
+#hugo-algolia -s

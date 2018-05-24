@@ -3,7 +3,7 @@
     "hugo-algolia": "^1.2.8"
   }
   scripts: {
-    "index": "rootsongjc-hugo",
+    "index": "devops-007-blog",
     "index-and-send": "hugo-algolia -s"
   }
 }

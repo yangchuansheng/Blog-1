@@ -8,7 +8,7 @@ nocomment: true
 postmeta: false
 notoc: true
 seealso: false
-bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523237177/Linux.jpg", desc: "Linux lover - aiming.cao"}]
+bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523266902/Wolf.jpg", desc: "Linux lover - aiming.cao"}]
 ---
 
 

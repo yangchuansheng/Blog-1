@@ -6,8 +6,8 @@
     <description>Recent content in Fedora on devops007</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>xxx (Aiming Cao(曹爱明))</managingEditor>
-    <webMaster>xxx (Aiming Cao(曹爱明))</webMaster>
+    <managingEditor>caming101006@gmail.com (Aiming Cao(曹爱明))</managingEditor>
+    <webMaster>caming101006@gmail.com (Aiming Cao(曹爱明))</webMaster>
     <lastBuildDate>Wed, 11 Apr 2018 20:50:21 +0800</lastBuildDate>
     
 	<atom:link href="https://linuxer.io/tags/fedora/index.xml" rel="self" type="application/rss+xml" />
@@ -15,10 +15,10 @@
     
     <item>
       <title>如何在Linux桌面上养鱼</title>
-      <link>https://linuxer.io/posts/20180411/</link>
+      <link>https://linuxer.io/posts/compiz-fusion/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>xxx (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/posts/20180411/</guid>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/compiz-fusion/</guid>
       <description>&amp;emsp;&amp;emsp;Compiz 是第一个由 OpenGL 驱动的运行于 X Window System 上的混合窗口管理器 。 Compiz的混合渲染能力使其可以在窗口管理过程中实现多种视觉效果，比如在矩形虚拟桌面上</description>
     </item>
     

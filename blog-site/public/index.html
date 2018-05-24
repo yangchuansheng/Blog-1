@@ -28,13 +28,19 @@
   <link rel="alternate" href="https://linuxer.io/index.xml" type="application/rss+xml" title="devops007">
   <script src="https://res.cloudinary.com/devops007/raw/upload/v1523241868/beautifulhugo/jquery-1.12.4.min.js"></script>
   
+  
   <link rel="stylesheet" href="https://res.cloudinary.com/devops007/raw/upload/v1523270279/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
   
   <link rel="stylesheet" href="https://linuxer.io/css/main.css" />
+  
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/toc.css" />
+  
   <link rel="stylesheet" href="https://linuxer.io/css/search.css" />
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
   
@@ -199,7 +205,7 @@
         
           
             <li>
-              <a title="Ops" href="/ops/">Ops</a>
+              <a title="Hugo" href="/hugo/">Hugo</a>
               
               
             </li>
@@ -215,15 +221,57 @@
         
 
         
+        
+        
+            
+<li>
+     <div class="column">
+         <div id="sb-search" class="sb-search">
+             <form>
+                 <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search" autocomplete="off">
+                 <input class="sb-search-submit" type="text" value="" autocomplete="off">
+                 <span  class="sb-icon-search "></span>
+             </form>
+             <ul class="sb-option">
+             </ul>
+         </div>
+     </div>
+</li>
+
+<script src="https://res.cloudinary.com/devops007/raw/upload/v1523241868/beautifulhugo/algoliasearch.min.js"></script>
+
+<script src="https://linuxer.io/js/classie.js"></script>
+<script src="https://linuxer.io/js/uisearch.js"></script>
+
+
+<script>
+    var client = algoliasearch("15QMKYAH3C", "1eb3f0035ce908e604a469c3d87fdf44");
+    var index = client.initIndex('devops-007-blog');
+
+    $(document).ready(function(){
+        new UISearch( document.getElementById( 'sb-search' ) );
+    })
+    .on('input propertychange', '.sb-search-input', function() {
+        var search_str = $(this).val()
+        if (search_str == "") {
+            $(".sb-option").empty()
+        } else {
+            index.search(search_str, function (err, contacts){
+                $(".sb-option").empty()
+                for (var i = 0; i < contacts.hits.length; i++) {
+                    var _li = '<li>' +
+                                  '<a href="/' + contacts.hits[i].uri  + '">'+
+                                      '<span>' + contacts.hits[i].title  + '</span>'+
+                                  '</a>'+
+                              '</li>'
+                    $(".sb-option").append(_li)
+                }
+            });
+        }
+    })
+</script>
 
         
-        
-          <li>
-            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
-              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
-            </a>
-          </li>
-          
       </ul>
     </div>
 
@@ -241,59 +289,6 @@
 </nav>
 
 
-
-
-
-  <div id="modalSearch" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Search Blog</h4>
-        </div>
-        <div class="modal-body">
-            
-<div class="aa-input-container" id="aa-input-container">
-    <input type="search" id="aa-search-input" class="aa-input-search" placeholder="Search for titles or URIs..." name="search" autocomplete="off" />
-    <svg class="aa-input-icon" viewBox="654 -372 1664 1664">
-        <path d="M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5  C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5  C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342  c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332  s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225  S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z" />
-    </svg>
-</div>
-
-
-
-<script src="https://res.cloudinary.com/devops007/raw/upload/v1523241868/beautifulhugo/algoliasearch.min.js"></script>
-<script src="https://res.cloudinary.com/devops007/raw/upload/v1523241868/beautifulhugo/autocomplete.min.js"></script>
-
-<script>
-var client = algoliasearch("X4YB3WOBNV", "d2134c5a8d250e6d3246594240c45201");
-var index = client.initIndex('rootsongjc-hugo');
-
-autocomplete('#aa-search-input',
-{ hint: false}, {
-    source: autocomplete.sources.hits(index, {hitsPerPage: 5}),
-    
-    displayKey: 'name',
-    
-    templates: {
-        
-        suggestion: function(suggestion) {
-            
-            return '<span>' + '<a href="/' + suggestion.uri+ '">' +
-            suggestion._highlightResult.title.value + '</a></span>';
-        }
-    }
-});
-</script>
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
     
@@ -391,7 +386,77 @@ autocomplete('#aa-search-input',
           
           
             <article class="post-preview">
-              <a href="https://linuxer.io/posts/20180411/">
+              <a href="https://linuxer.io/posts/hugo-search/">
+                <h2 class="post-title">为Hugo设计搜索框</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  
+  Posted on May 24, 2018
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  &emsp;&emsp;网上对于beautifulhugo主题的搜索框千篇一律，都是基于modal做的，在了解了algolia插件搜索的AP
+                  <a href="https://linuxer.io/posts/hugo-search/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://linuxer.io/tags/hugo/">hugo</a>&nbsp;
+                
+                  #<a href="https://linuxer.io/tags/beautifulhugo/">beautifulhugo</a>&nbsp;
+                
+                  #<a href="https://linuxer.io/tags/algolia/">algolia</a>&nbsp;
+                
+                  #<a href="https://linuxer.io/tags/search/">search</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://linuxer.io/posts/hugo-toc/">
+                <h2 class="post-title">为Hugo重新渲染Toc目录样式</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  
+  Posted on May 23, 2018
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  &emsp;&emsp;Hugo的皮肤beautifulhugo自带的目录不是很美观，因此我们对{{.TableOfContents}}的模
+                  <a href="https://linuxer.io/posts/hugo-toc/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://linuxer.io/tags/hugo/">hugo</a>&nbsp;
+                
+                  #<a href="https://linuxer.io/tags/beautifulhugo/">beautifulhugo</a>&nbsp;
+                
+                  #<a href="https://linuxer.io/tags/toc/">Toc</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
+              <a href="https://linuxer.io/posts/compiz-fusion/">
                 <h2 class="post-title">如何在Linux桌面上养鱼</h2>
                 
               </a>
@@ -407,7 +472,7 @@ autocomplete('#aa-search-input',
               <div class="post-entry">
                 
                   &emsp;&emsp;Compiz 是第一个由 OpenGL 驱动的运行于 X Window System 上的混合窗口管理器 。 Compiz的混合渲染能力使其可以在窗口管理过程中实现多种视觉效果，比如在矩形虚拟桌面上
-                  <a href="https://linuxer.io/posts/20180411/" class="post-read-more">[Read More]</a>
+                  <a href="https://linuxer.io/posts/compiz-fusion/" class="post-read-more">[Read More]</a>
                 
               </div>
 
@@ -428,38 +493,6 @@ autocomplete('#aa-search-input',
               
             </article>
           
-            <article class="post-preview">
-              <a href="https://linuxer.io/posts/20180409/">
-                <h2 class="post-title">什么是Service Mesh（服务网格）</h2>
-                
-              </a>
-
-              <span class="post-meta">
-  
-  Posted on April 9, 2018
-  
-  
-</span>
-
-
-              <div class="post-entry">
-                
-                  Service mesh 又译作 “服务网格”，作为服务间通信的基础设施层。Buoyant 公司的 CEO Willian Morgan 在他的这篇文章 WHAT’S A SERVICE MESH? AND WHY DO I NEED ONE? 中解释了什么是 Service M
-                  <a href="https://linuxer.io/posts/20180409/" class="post-read-more">[Read More]</a>
-                
-              </div>
-
-              
-                <span class="post-meta">
-                
-                  #<a href="https://linuxer.io/tags/service-mesh/">service-mesh</a>&nbsp;
-                
-                  #<a href="https://linuxer.io/tags/cloud-native/">cloud-native</a>&nbsp;
-                
-                </span>
-              
-            </article>
-          
         </div>
 
         
@@ -467,6 +500,7 @@ autocomplete('#aa-search-input',
       <div align="center" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
 
+        
         
         
         
@@ -481,7 +515,7 @@ autocomplete('#aa-search-input',
         <ul class="list-inline text-center footer-links">
           
               <li>
-                <a href="mailto:xxx" title="Email me">
+                <a href="mailto:caming101006@gmail.com" title="Email me">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
                     <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
@@ -602,9 +636,13 @@ autocomplete('#aa-search-input',
 <script src="https://res.cloudinary.com/devops007/raw/upload/v1523240309/beautifulhugo/photoswipe-ui-default.min.js"></script>
 <script src="https://res.cloudinary.com/devops007/raw/upload/v1523240309/beautifulhugo/photoswipe.min.js"></script>
 <script src="https://res.cloudinary.com/devops007/raw/upload/v1523240309/beautifulhugo/auto-render.min.js"></script>
-<script src="https://res.cloudinary.com/devops007/raw/upload/v1523240309/beautifulhugo/main.js"></script>
+
+<script src="https://linuxer.io/js/main.js"></script> 
 <script src="https://res.cloudinary.com/devops007/raw/upload/v1523240309/beautifulhugo/prism.js"></script>
 <script src="https://res.cloudinary.com/devops007/raw/upload/v1523240309/beautifulhugo/katex.min.js"></script>
+
+
+
 <script> renderMathInElement(document.body); </script>
 
 
