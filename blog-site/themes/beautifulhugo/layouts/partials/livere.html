@@ -8,7 +8,8 @@
                 if (typeof LivereTower === 'function') { return; }
     
                 j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                //j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.src = '{{ "js/uisearch.js" | absURL }}';
                 j.async = true;
     
                 e.parentNode.insertBefore(j, e);

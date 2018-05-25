@@ -11,13 +11,13 @@ bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523547959/ba
  驱动的运行于 [X Window System](https://zh.wikipedia.org/wiki/X_Window_System) 上的混合窗口管理器 。
  Compiz的混合渲染能力使其可以在窗口管理过程中实现多种视觉效果，比如在矩形虚拟桌面上的窗口最小化。
  compiz整合了多种特效，最为有趣的是飞雪和养鱼，今天带大家来看看如何在办公桌上养鱼。<br>
-<br>
-<br>
 
 ![compiz](https://res.cloudinary.com/devops007/image/upload/v1523446334/cube2.png)
+<!--more-->
+
 
 # 最终效果展示
-&emsp;&emsp;我们以Fedora系统举例演示，先看一下最终的养鱼效果图,在vim编辑代码的时候鱼儿仍然置于最前端：
+&emsp;&emsp;我们以Fedora系统举例演示，上面是最终的桌面效果,在vim编辑代码的时候鱼儿仍然置于最前端。
 
 ![fish](https://res.cloudinary.com/devops007/image/upload/v1523446219/myFish.gif)
 

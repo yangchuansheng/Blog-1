@@ -1,0 +1,44 @@
+.my-introduce, .my-introduce::before, .my-introduce::after {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+}
+         
+.my-introduce {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: url("img/Button-White-Large.png") no-repeat 50%/70% rgba(0, 0, 0, 0.1);
+  color: #69ca62;
+  box-shadow: inset 0 0 0 1px rgba(105, 202, 98, 0.5);
+}
+.my-introduce::before, .my-introduce::after {
+  content: '';
+  z-index: -1;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
+}
+.my-introduce::before {
+  animation-delay: -4s;
+}
+.my-introduce:hover::after, .my-introduce:hover::before {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+ 
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 220.0px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220.0px, 0px);
+  }
+  50% {
+    clip: rect(218.0px, 220.0px, 220.0px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220.0px, 220.0px, 218.0px);
+  }
+}   

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://linuxer.io/posts/hugo-search/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/posts/hugo-toc/</loc>
+    <lastmod>2018-05-23T19:33:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/posts/wine-photoshop-cs6/</loc>
+    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/posts/compiz-fusion/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/about/</loc>
+    <lastmod>2017-03-18T20:53:54+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/algolia/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/beautifulhugo/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/centos/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/centos/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/compiz-fusion/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/fedora/</loc>
+    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/fedora/</loc>
+    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/hugo/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/hugo/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/me/</loc>
+    <lastmod>2017-03-18T20:53:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/opensuse/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/opensuse/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/photoshopcs6/</loc>
+    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/playonlinux/</loc>
+    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/posts/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/redhat/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/redhat/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/search/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/</loc>
+    <lastmod>2018-05-24T11:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/toc/</loc>
+    <lastmod>2018-05-23T19:33:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/ubuntu/</loc>
+    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/tags/wine/</loc>
+    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

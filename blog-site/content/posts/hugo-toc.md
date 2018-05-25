@@ -7,10 +7,11 @@ tags: ["hugo", "beautifulhugo", "Toc"]
 bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/dpr_0.75/v1523215797/IMG_0165.jpg", desc: "杭州建德 May 8,2016"}]
 ---
 
-&emsp;&emsp;Hugo的皮肤beautifulhugo自带的目录不是很美观，因此我们对{{.TableOfContents}}的模板进行重新渲染，让它美观一些，
-由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了gitbook的
+&emsp;&emsp;`Hugo`的皮肤`beautifulhugo`自带的目录不是很美观，因此我们对`{{.TableOfContents}}`的模板进行重新渲染，让它美观一些，
+由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了`gitbook`的
 [gitbook-plugin-anchor-navigation-ex](https://github.com/zq99299/gitbook-plugin-anchor-navigation-ex)
 插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。
+<!--more-->
 
 # 效果展示
 &emsp;&emsp;直接将鼠标移到右上侧图标处，即可展开目录，将鼠标移至右下侧图标处可回到顶部

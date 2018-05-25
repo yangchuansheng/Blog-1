@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>devops007</title>
+    <link>https://linuxer.io/</link>
+    <description>Recent content on devops007</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>caming101006@gmail.com (Aiming Cao(曹爱明))</managingEditor>
+    <webMaster>caming101006@gmail.com (Aiming Cao(曹爱明))</webMaster>
+    <lastBuildDate>Thu, 24 May 2018 11:15:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://linuxer.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为Hugo设计搜索框</title>
+      <link>https://linuxer.io/posts/hugo-search/</link>
+      <pubDate>Thu, 24 May 2018 11:15:23 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/hugo-search/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;网上对于&lt;code&gt;beautifulhugo&lt;/code&gt;主题的搜索框千篇一律，都是基于modal做的，在了解了&lt;code&gt;algolia&lt;/code&gt;搜索插件的API后，我们基于该插件设计自己的可伸缩搜索框。
+希望可以抛砖引玉，为大家提供一个思路。关于algolia插件的引入这里就不介绍了，网上教程很多。我们主要是美化我们的搜索框风格。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>为Hugo重新渲染Toc目录样式</title>
+      <link>https://linuxer.io/posts/hugo-toc/</link>
+      <pubDate>Wed, 23 May 2018 19:33:47 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/hugo-toc/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;code&gt;Hugo&lt;/code&gt;的皮肤&lt;code&gt;beautifulhugo&lt;/code&gt;自带的目录不是很美观，因此我们对&lt;code&gt;{{.TableOfContents}}&lt;/code&gt;的模板进行重新渲染，让它美观一些，
+由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了&lt;code&gt;gitbook&lt;/code&gt;的
+&lt;a href=&#34;https://github.com/zq99299/gitbook-plugin-anchor-navigation-ex&#34;&gt;gitbook-plugin-anchor-navigation-ex&lt;/a&gt;
+插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用Wine为Linux移植Photoshop-CS6</title>
+      <link>https://linuxer.io/posts/wine-photoshop-cs6/</link>
+      <pubDate>Wed, 25 Apr 2018 15:17:20 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/wine-photoshop-cs6/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;code&gt;Photoshop&lt;/code&gt;强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
+PS软件是非常方便的，虽然Linux环境下拥有替代产品&lt;code&gt;IMP&lt;/code&gt;,但是习惯PS的我还是想在Linux上实现这一目标，由于Windows环境不在考虑范围内，Mac也不是人人都有，但是感谢&lt;code&gt;Wine&lt;/code&gt;社区的努力，让我们
+在Linux环境底下运行&lt;code&gt;.exe&lt;/code&gt;程序不再是梦想，喜欢打游戏的IT人员一定会爱上它的，而且最近我在YouTobe上看到了有人成功移植了LOL。
+&lt;img src=&#34;http://res.cloudinary.com/devops007/image/upload/v1527245761/System/Wine/PhotoShop/Adobe-Photoshop-CS6.png&#34; alt=&#34;CS6&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何在Linux桌面上养鱼</title>
+      <link>https://linuxer.io/posts/compiz-fusion/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/compiz-fusion/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;a href=&#34;http://wiki.compiz.org/&#34;&gt;Compiz&lt;/a&gt; 是第一个由 &lt;a href=&#34;https://zh.wikipedia.org/wiki/OpenGL&#34;&gt;OpenGL&lt;/a&gt;
+ 驱动的运行于 &lt;a href=&#34;https://zh.wikipedia.org/wiki/X_Window_System&#34;&gt;X Window System&lt;/a&gt; 上的混合窗口管理器 。
+ Compiz的混合渲染能力使其可以在窗口管理过程中实现多种视觉效果，比如在矩形虚拟桌面上的窗口最小化。
+ compiz整合了多种特效，最为有趣的是飞雪和养鱼，今天带大家来看看如何在办公桌上养鱼。&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1523446334/cube2.png&#34; alt=&#34;compiz&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://linuxer.io/about/</link>
+      <pubDate>Sat, 18 Mar 2017 20:53:54 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/about/</guid>
+      <description>Info Aiming Cao（曹爱明） Xi&amp;rsquo;an, China 🇨🇳 Xi&amp;rsquo;an University of Posts&amp;amp;Telecommunications（西安邮电大学） Major in Software Engineering Career aispeech（思必驰</description>
+    </item>
+    
+  </channel>
+</rss>

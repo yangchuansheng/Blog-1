@@ -7,8 +7,9 @@ tags: ["hugo", "beautifulhugo", "algolia", "search"]
 bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523274059/about.jpg", desc: "苏州夜幕 May 3,2018"}]
 ---
 
-&emsp;&emsp;网上对于beautifulhugo主题的搜索框千篇一律，都是基于modal做的，在了解了algolia插件搜索的API后，我们基于该插件设计自己的可伸缩搜索框。
-希望可以抛砖引玉，为大家提供一个思路。关于algolia插件的引入这里就不介绍了，网上教程很多。我们主要是美化我们的搜索框风格。</br>
+&emsp;&emsp;网上对于`beautifulhugo`主题的搜索框千篇一律，都是基于modal做的，在了解了`algolia`搜索插件的API后，我们基于该插件设计自己的可伸缩搜索框。
+希望可以抛砖引玉，为大家提供一个思路。关于algolia插件的引入这里就不介绍了，网上教程很多。我们主要是美化我们的搜索框风格。
+<!--more-->
 
 # 效果展示
 &emsp;&emsp;右上角就是我为该网站设计的搜索框，点击可以展开，输入内容后自动匹配包含关键字的标题文章，实时刷新。
