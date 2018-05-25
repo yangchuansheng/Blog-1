@@ -84,11 +84,8 @@ bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523274059/ab
 &emsp;&emsp;search.css文件是修改过后的，里面涉及字体文件，后面有下载链接，大家可以调整该文件完美融入自己的主题。
 
 
-## 下载链接
-- [search.css]()
-- [uisearch.js]()
-- [classie.js]()
-- [字体文件]()
+## 下载链接（所需文件已打包）
+- [beautifulhugo-search-plugin.tar.gz](https://res.cloudinary.com/devops007/raw/upload/v1527251126/beautifulhugo/search-plugin/beautifulhugo-search-plugin.tar.gz)
 
 # 参考
 - [Hugo 集成 Algolia 搜索](https://juejin.im/entry/5ab6e9c8f265da239d4943c6)
