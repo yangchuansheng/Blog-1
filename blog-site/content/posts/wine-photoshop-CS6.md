@@ -10,7 +10,7 @@ tags: ["fedora", "wine", "PlayOnLinux", "PhotoshopCS6"]
 &emsp;&emsp;`Photoshop`强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
 PS软件是非常方便的，虽然Linux环境下拥有替代产品`IMP`,但是习惯PS的我还是想在Linux上实现这一目标，由于Windows环境不在考虑范围内，Mac也不是人人都有，但是感谢`Wine`社区的努力，让我们
 在Linux环境底下运行`.exe`程序不再是梦想，喜欢打游戏的IT人员一定会爱上它的，而且最近我在YouTobe上看到了有人成功移植了LOL。
-![CS6](http://res.cloudinary.com/devops007/image/upload/v1527245761/System/Wine/PhotoShop/Adobe-Photoshop-CS6.png)
+![CS6](https://res.cloudinary.com/devops007/image/upload/v1527245761/System/Wine/PhotoShop/Adobe-Photoshop-CS6.png)
 <!--more-->
 
 # Wine是什么？
