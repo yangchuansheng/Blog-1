@@ -96,7 +96,7 @@ desc = "Wolf - North of China -Apr 9 2018"
 
 [[menu.main]]
     name = "Linux"
-    url = "/linux/"
+    url = "categories/linux/"
     weight = 3
 
 
@@ -107,12 +107,12 @@ desc = "Wolf - North of China -Apr 9 2018"
 
 [[menu.main]]
     name = "Algorithm"
-    url = "/algorithm/"
+    url = "categories/algorithm/"
     weight = 4
 
 [[menu.main]]
     name = "Hugo"
-    url = "/hugo/"
+    url = "categories/hugo/"
     weight = 5
 
 [[menu.main]]
