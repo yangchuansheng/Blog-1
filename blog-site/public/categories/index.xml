@@ -13,24 +13,6 @@
     
     
     <item>
-      <title>Centos</title>
-      <link>https://linuxer.io/categories/centos/</link>
-      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/categories/centos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fedora</title>
-      <link>https://linuxer.io/categories/fedora/</link>
-      <pubDate>Wed, 25 Apr 2018 15:17:20 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/categories/fedora/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hugo</title>
       <link>https://linuxer.io/categories/hugo/</link>
       <pubDate>Thu, 24 May 2018 11:15:23 +0800</pubDate>
@@ -40,29 +22,11 @@
     </item>
     
     <item>
-      <title>Opensuse</title>
-      <link>https://linuxer.io/categories/opensuse/</link>
-      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <title>Linux</title>
+      <link>https://linuxer.io/categories/linux/</link>
+      <pubDate>Thu, 26 Apr 2018 08:14:31 +0800</pubDate>
       <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/categories/opensuse/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Redhat</title>
-      <link>https://linuxer.io/categories/redhat/</link>
-      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/categories/redhat/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ubuntu</title>
-      <link>https://linuxer.io/categories/ubuntu/</link>
-      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/categories/ubuntu/</guid>
+      <guid>https://linuxer.io/categories/linux/</guid>
       <description></description>
     </item>
     

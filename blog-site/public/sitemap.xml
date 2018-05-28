@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://linuxer.io/posts/wine-office2013/</loc>
+    <lastmod>2018-04-26T08:14:31+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://linuxer.io/posts/wine-photoshop-cs6/</loc>
     <lastmod>2018-04-25T15:17:20+08:00</lastmod>
   </url>
@@ -50,32 +55,8 @@
   </url>
   
   <url>
-    <loc>https://linuxer.io/tags/centos/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/categories/centos/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://linuxer.io/tags/compiz-fusion/</loc>
     <lastmod>2018-04-11T20:50:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/tags/fedora/</loc>
-    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/categories/fedora/</loc>
-    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -92,50 +73,44 @@
   </url>
   
   <url>
+    <loc>https://linuxer.io/tags/linux/</loc>
+    <lastmod>2018-04-26T08:14:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://linuxer.io/categories/linux/</loc>
+    <lastmod>2018-04-26T08:14:31+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://linuxer.io/tags/me/</loc>
     <lastmod>2017-03-18T20:53:54+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linuxer.io/tags/opensuse/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
+    <loc>https://linuxer.io/tags/office2013/</loc>
+    <lastmod>2018-04-26T08:14:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/opensuse/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/tags/photoshopcs6/</loc>
+    <loc>https://linuxer.io/tags/photoshop-cs6/</loc>
     <lastmod>2018-04-25T15:17:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://linuxer.io/tags/playonlinux/</loc>
-    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
+    <lastmod>2018-04-26T08:14:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://linuxer.io/posts/</loc>
     <lastmod>2018-05-24T11:15:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/tags/redhat/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://linuxer.io/categories/redhat/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,14 +133,8 @@
   </url>
   
   <url>
-    <loc>https://linuxer.io/categories/ubuntu/</loc>
-    <lastmod>2018-04-11T20:50:21+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://linuxer.io/tags/wine/</loc>
-    <lastmod>2018-04-25T15:17:20+08:00</lastmod>
+    <lastmod>2018-04-26T08:14:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   

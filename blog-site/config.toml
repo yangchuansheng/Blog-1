@@ -95,45 +95,9 @@ desc = "Wolf - North of China -Apr 9 2018"
     weight = 7
 
 [[menu.main]]
-    identifier = "System"
-    name = "System"
+    name = "Linux"
+    url = "/linux/"
     weight = 3
-
-[[menu.main]]
-    parent = "System"
-    name = "Redhat"
-    url = "categories/redhat"
-    weight = 1
-
-[[menu.main]]
-    parent = "System"
-    name = "Centos"
-    url = "categories/centos"
-    weight = 2
-
-[[menu.main]]
-    parent = "System"
-    name = "Fedora"
-    url = "categories/fedora"
-    weight = 3
-
-[[menu.main]]
-    parent = "System"
-    name = "Opensuse"
-    url = "categories/opensuse"
-    weight = 4
-
-[[menu.main]]
-    parent = "System"
-    name = "Ubuntu"
-    url = "categories/ubuntu"
-    weight = 5
-
-[[menu.main]]
-    parent = "System"
-    name = "FreeBSD"
-    url = "categories/freebsd"
-    weight = 6
 
 
 [[menu.main]]

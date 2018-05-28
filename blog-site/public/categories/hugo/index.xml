@@ -21,7 +21,11 @@
       <guid>https://linuxer.io/posts/hugo-search/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;网上对于&lt;code&gt;beautifulhugo&lt;/code&gt;主题的搜索框千篇一律，都是基于modal做的，在了解了&lt;code&gt;algolia&lt;/code&gt;搜索插件的API后，我们基于该插件设计自己的可伸缩搜索框。
 希望可以抛砖引玉，为大家提供一个思路。关于algolia插件的引入这里就不介绍了，网上教程很多。我们主要是美化我们的搜索框风格。
-&lt;/p&gt;</description>
+&lt;figure&gt;
+    &lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1527262409/beautifulhugo/search-plugin/hugo-search.gif&#34; &gt;
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,6 +38,9 @@
 由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了&lt;code&gt;gitbook&lt;/code&gt;的
 &lt;a href=&#34;https://github.com/zq99299/gitbook-plugin-anchor-navigation-ex&#34;&gt;gitbook-plugin-anchor-navigation-ex&lt;/a&gt;
 插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。
+&lt;figure&gt;
+    &lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1527262700/beautifulhugo/Toc/toc.gif&#34; width=&#34;1000&#34;&gt;
+&lt;/figure&gt;
 &lt;/p&gt;</description>
     </item>
     

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Office2013 on devops007</title>
+    <link>https://linuxer.io/tags/office2013/</link>
+    <description>Recent content in Office2013 on devops007</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>caming101006@gmail.com (Aiming Cao(曹爱明))</managingEditor>
+    <webMaster>caming101006@gmail.com (Aiming Cao(曹爱明))</webMaster>
+    <lastBuildDate>Thu, 26 Apr 2018 08:14:31 +0800</lastBuildDate>
+    
+	<atom:link href="https://linuxer.io/tags/office2013/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux安装Office2013</title>
+      <link>https://linuxer.io/posts/wine-office2013/</link>
+      <pubDate>Thu, 26 Apr 2018 08:14:31 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/posts/wine-office2013/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;如果你习惯了Office办公，比如我的学习笔记是用OneNote记录的。借助PlayOnLinux来完成安装，由于当前wine版本支持最稳定的Office是2010版本，Office2010的安装可以参考上篇&lt;code&gt;Photoshop-CS6&lt;/code&gt;的安装，我们这篇主要介绍如何利用Bash脚本安装不稳定的Office2013，路总是人走出来的，只有大家一起努力，才能让那些不稳定的版本慢慢变得稳定，我们应该参与进去，而不是一味的将希望寄托在别人身上。
+&lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1527487576/System/Wine/Office2013/office2013.logo.png&#34; alt=&#34;office-list&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

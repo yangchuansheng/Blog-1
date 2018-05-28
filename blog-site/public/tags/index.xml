@@ -32,29 +32,11 @@
     </item>
     
     <item>
-      <title>Centos</title>
-      <link>https://linuxer.io/tags/centos/</link>
-      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/tags/centos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Compiz Fusion</title>
       <link>https://linuxer.io/tags/compiz-fusion/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
       <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/tags/compiz-fusion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fedora</title>
-      <link>https://linuxer.io/tags/fedora/</link>
-      <pubDate>Wed, 25 Apr 2018 15:17:20 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/tags/fedora/</guid>
       <description></description>
     </item>
     
@@ -68,6 +50,15 @@
     </item>
     
     <item>
+      <title>Linux</title>
+      <link>https://linuxer.io/tags/linux/</link>
+      <pubDate>Thu, 26 Apr 2018 08:14:31 +0800</pubDate>
+      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <guid>https://linuxer.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Me</title>
       <link>https://linuxer.io/tags/me/</link>
       <pubDate>Sat, 18 Mar 2017 20:53:54 +0800</pubDate>
@@ -77,38 +68,29 @@
     </item>
     
     <item>
-      <title>Opensuse</title>
-      <link>https://linuxer.io/tags/opensuse/</link>
-      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <title>Office2013</title>
+      <link>https://linuxer.io/tags/office2013/</link>
+      <pubDate>Thu, 26 Apr 2018 08:14:31 +0800</pubDate>
       <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/tags/opensuse/</guid>
+      <guid>https://linuxer.io/tags/office2013/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Photoshopcs6</title>
-      <link>https://linuxer.io/tags/photoshopcs6/</link>
+      <title>Photoshop Cs6</title>
+      <link>https://linuxer.io/tags/photoshop-cs6/</link>
       <pubDate>Wed, 25 Apr 2018 15:17:20 +0800</pubDate>
       <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/tags/photoshopcs6/</guid>
+      <guid>https://linuxer.io/tags/photoshop-cs6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Playonlinux</title>
       <link>https://linuxer.io/tags/playonlinux/</link>
-      <pubDate>Wed, 25 Apr 2018 15:17:20 +0800</pubDate>
+      <pubDate>Thu, 26 Apr 2018 08:14:31 +0800</pubDate>
       <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/tags/playonlinux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Redhat</title>
-      <link>https://linuxer.io/tags/redhat/</link>
-      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
-      <guid>https://linuxer.io/tags/redhat/</guid>
       <description></description>
     </item>
     
@@ -133,7 +115,7 @@
     <item>
       <title>Wine</title>
       <link>https://linuxer.io/tags/wine/</link>
-      <pubDate>Wed, 25 Apr 2018 15:17:20 +0800</pubDate>
+      <pubDate>Thu, 26 Apr 2018 08:14:31 +0800</pubDate>
       <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
       <guid>https://linuxer.io/tags/wine/</guid>
       <description></description>

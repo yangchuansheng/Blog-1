@@ -1,10 +1,10 @@
 ---
-title: "用Wine为Linux移植Photoshop-CS6"
+title: "Linux安装Photoshop-CS6"
 date: 2018-04-25T15:17:20+08:00
 draft: false
-categories: "fedora"
-bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1527247808/System/Wine/PhotoShop/wine-1.jpg"}]
-tags: ["fedora", "wine", "PlayOnLinux", "PhotoshopCS6"]
+categories: "linux"
+bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1527247808/System/Wine/PhotoShop/wine-1.jpg", desc: "苏州苏州湾 May 5,2017"}]
+tags: ["linux", "wine", "PlayOnLinux", "Photoshop-CS6"]
 ---
 
 &emsp;&emsp;`Photoshop`强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
@@ -89,7 +89,7 @@ cp  amtlib.dll  ~/.PlayOnLinux/wineprefix/PhotoshopCS6/drive_c/"Program Files"/A
 ```
 
 打开PhotoShop软件，未提示激活信息则表示破解成功，此时可以联网了。
-G
+
 ## 解决中文乱码
 
 - __1. 安装宋体__
