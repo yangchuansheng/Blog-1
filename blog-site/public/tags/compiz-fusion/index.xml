@@ -6,8 +6,8 @@
     <description>Recent content in Compiz Fusion on devops007</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>caming101006@gmail.com (Aiming Cao(曹爱明))</managingEditor>
-    <webMaster>caming101006@gmail.com (Aiming Cao(曹爱明))</webMaster>
+    <managingEditor>caming101006@gmail.com (westos)</managingEditor>
+    <webMaster>caming101006@gmail.com (westos)</webMaster>
     <lastBuildDate>Wed, 11 Apr 2018 20:50:21 +0800</lastBuildDate>
     
 	<atom:link href="https://linuxer.io/tags/compiz-fusion/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
       <title>如何在Linux桌面上养鱼</title>
       <link>https://linuxer.io/posts/compiz-fusion/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (westos)</author>
       <guid>https://linuxer.io/posts/compiz-fusion/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;a href=&#34;http://wiki.compiz.org/&#34;&gt;Compiz&lt;/a&gt; 是第一个由 &lt;a href=&#34;https://zh.wikipedia.org/wiki/OpenGL&#34;&gt;OpenGL&lt;/a&gt;
  驱动的运行于 &lt;a href=&#34;https://zh.wikipedia.org/wiki/X_Window_System&#34;&gt;X Window System&lt;/a&gt; 上的混合窗口管理器 。

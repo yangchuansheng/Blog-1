@@ -6,8 +6,8 @@
     <description>Recent content on devops007</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>caming101006@gmail.com (Aiming Cao(曹爱明))</managingEditor>
-    <webMaster>caming101006@gmail.com (Aiming Cao(曹爱明))</webMaster>
+    <managingEditor>caming101006@gmail.com (westos)</managingEditor>
+    <webMaster>caming101006@gmail.com (westos)</webMaster>
     <lastBuildDate>Thu, 24 May 2018 11:15:23 +0800</lastBuildDate>
     
 	<atom:link href="https://linuxer.io/index.xml" rel="self" type="application/rss+xml" />
@@ -17,13 +17,13 @@
       <title>为Hugo设计搜索框</title>
       <link>https://linuxer.io/posts/hugo-search/</link>
       <pubDate>Thu, 24 May 2018 11:15:23 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (westos)</author>
       <guid>https://linuxer.io/posts/hugo-search/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;网上对于&lt;code&gt;beautifulhugo&lt;/code&gt;主题的搜索框千篇一律，都是基于modal做的，在了解了&lt;code&gt;algolia&lt;/code&gt;搜索插件的API后，我们基于该插件设计自己的可伸缩搜索框。
 希望可以抛砖引玉，为大家提供一个思路。关于algolia插件的引入这里就不介绍了，网上教程很多。我们主要是美化我们的搜索框风格。
-&lt;figure&gt;
+&lt;!--&lt;figure&gt;
     &lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1527262409/beautifulhugo/search-plugin/hugo-search.gif&#34; &gt;
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;--&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
@@ -32,23 +32,25 @@
       <title>为Hugo重新渲染Toc目录样式</title>
       <link>https://linuxer.io/posts/hugo-toc/</link>
       <pubDate>Wed, 23 May 2018 19:33:47 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (westos)</author>
       <guid>https://linuxer.io/posts/hugo-toc/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;code&gt;Hugo&lt;/code&gt;的皮肤&lt;code&gt;beautifulhugo&lt;/code&gt;自带的目录不是很美观，因此我们对&lt;code&gt;{{.TableOfContents}}&lt;/code&gt;的模板进行重新渲染，让它美观一些，
 由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了&lt;code&gt;gitbook&lt;/code&gt;的
 &lt;a href=&#34;https://github.com/zq99299/gitbook-plugin-anchor-navigation-ex&#34;&gt;gitbook-plugin-anchor-navigation-ex&lt;/a&gt;
-插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。
-&lt;figure&gt;
+插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。&lt;/p&gt;
+
+&lt;!--&lt;figure&gt;
     &lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1527262700/beautifulhugo/Toc/toc.gif&#34; width=&#34;1000&#34;&gt;
-&lt;/figure&gt;
-&lt;/p&gt;</description>
+&lt;/figure&gt; --&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux安装Office2013</title>
       <link>https://linuxer.io/posts/wine-office2013/</link>
       <pubDate>Thu, 26 Apr 2018 08:14:31 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (westos)</author>
       <guid>https://linuxer.io/posts/wine-office2013/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;如果你习惯了Office办公，比如我的学习笔记是用OneNote记录的。借助PlayOnLinux来完成安装，由于当前wine版本支持最稳定的Office是2010版本，Office2010的安装可以参考上篇&lt;code&gt;Photoshop-CS6&lt;/code&gt;的安装，我们这篇主要介绍如何利用Bash脚本安装不稳定的Office2013，路总是人走出来的，只有大家一起努力，才能让那些不稳定的版本慢慢变得稳定，我们应该参与进去，而不是一味的将希望寄托在别人身上。
 &lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1527487576/System/Wine/Office2013/office2013.logo.png&#34; alt=&#34;office-list&#34; /&gt;
@@ -59,7 +61,7 @@
       <title>Linux安装Photoshop-CS6</title>
       <link>https://linuxer.io/posts/wine-photoshop-cs6/</link>
       <pubDate>Wed, 25 Apr 2018 15:17:20 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (westos)</author>
       <guid>https://linuxer.io/posts/wine-photoshop-cs6/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;code&gt;Photoshop&lt;/code&gt;强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
 PS软件是非常方便的，虽然Linux环境下拥有替代产品&lt;code&gt;IMP&lt;/code&gt;,但是习惯PS的我还是想在Linux上实现这一目标，由于Windows环境不在考虑范围内，Mac也不是人人都有，但是感谢&lt;code&gt;Wine&lt;/code&gt;社区的努力，让我们
@@ -72,7 +74,7 @@ PS软件是非常方便的，虽然Linux环境下拥有替代产品&lt;code&gt;I
       <title>如何在Linux桌面上养鱼</title>
       <link>https://linuxer.io/posts/compiz-fusion/</link>
       <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (westos)</author>
       <guid>https://linuxer.io/posts/compiz-fusion/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;a href=&#34;http://wiki.compiz.org/&#34;&gt;Compiz&lt;/a&gt; 是第一个由 &lt;a href=&#34;https://zh.wikipedia.org/wiki/OpenGL&#34;&gt;OpenGL&lt;/a&gt;
  驱动的运行于 &lt;a href=&#34;https://zh.wikipedia.org/wiki/X_Window_System&#34;&gt;X Window System&lt;/a&gt; 上的混合窗口管理器 。
@@ -87,9 +89,9 @@ PS软件是非常方便的，虽然Linux环境下拥有替代产品&lt;code&gt;I
       <title>About me</title>
       <link>https://linuxer.io/about/</link>
       <pubDate>Sat, 18 Mar 2017 20:53:54 +0800</pubDate>
-      <author>caming101006@gmail.com (Aiming Cao(曹爱明))</author>
+      <author>caming101006@gmail.com (westos)</author>
       <guid>https://linuxer.io/about/</guid>
-      <description>Info Aiming Cao（曹爱明） Xi&amp;rsquo;an, China 🇨🇳 Xi&amp;rsquo;an University of Posts&amp;amp;Telecommunications（西安邮电大学） Major in Software Engineering Career aispeech（思必驰</description>
+      <description>还没想好写啥。。</description>
     </item>
     
   </channel>

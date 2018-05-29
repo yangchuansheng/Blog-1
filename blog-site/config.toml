@@ -10,7 +10,7 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
-hello = "Hi,I'm aiming.cao"
+hello = "Hi,I'm westos"
 subtitle = "A wolf from northern China"
 flag = "🇨🇳"
 logo = "https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png"
@@ -34,7 +34,7 @@ desc = "Wolf - North of China -Apr 9 2018"
 
 
 [Author]
-  name = "Aiming Cao(曹爱明)"
+  name = "westos"
   website = "https://linuxer.io"
   email = "caming101006@gmail.com"
   facebook = "xxx"

@@ -9,9 +9,9 @@ bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1523274059/ab
 
 &emsp;&emsp;网上对于`beautifulhugo`主题的搜索框千篇一律，都是基于modal做的，在了解了`algolia`搜索插件的API后，我们基于该插件设计自己的可伸缩搜索框。
 希望可以抛砖引玉，为大家提供一个思路。关于algolia插件的引入这里就不介绍了，网上教程很多。我们主要是美化我们的搜索框风格。
-<figure>
+<!--<figure>
     <img src="https://res.cloudinary.com/devops007/image/upload/v1527262409/beautifulhugo/search-plugin/hugo-search.gif" >
-</figure> 
+</figure>-->
 
 <!--more-->
 

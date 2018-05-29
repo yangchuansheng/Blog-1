@@ -11,9 +11,10 @@ bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/dpr_0.75/v1523
 由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了`gitbook`的
 [gitbook-plugin-anchor-navigation-ex](https://github.com/zq99299/gitbook-plugin-anchor-navigation-ex)
 插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。
-<figure>
+
+<!--<figure>
     <img src="https://res.cloudinary.com/devops007/image/upload/v1527262700/beautifulhugo/Toc/toc.gif" width="1000">
-</figure> 
+</figure> -->
 <!--more-->
 
 # 效果展示
