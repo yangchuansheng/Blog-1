@@ -106,9 +106,15 @@ desc = "Wolf - North of China -Apr 9 2018"
     weight = 1
 
 [[menu.main]]
-    name = "Algorithm"
-    url = "categories/algorithm/"
-    weight = 4
+    identifier = "Gitbooks"
+    name = "Gitbooks"
+    weight = 2 
+
+[[menu.main]]
+    parent = "Gitbooks"
+    name = "sed&awk-101个技巧"
+    url = "sed-and-awk-101-hacks"
+    weight = 1 
 
 [[menu.main]]
     name = "Hugo"
