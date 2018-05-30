@@ -353,7 +353,7 @@
     <section id="datecount">
         <h4 id="date"> Thu Apr 26, 2018</h4>
     </section>
-    <h5 id="wc">3400 Words|Read in about 7 Min</h5>
+    <h5 id="wc">3500 Words|Read in about 7 Min</h5>
     <h5 id="tags">Tags: 
         
         <a href="https://linuxer.io/tags/linux/">linux</a> &nbsp;
@@ -389,6 +389,7 @@
 <li><a href="#解决黑屏">解决黑屏</a></li>
 <li><a href="#解决onenote打不开">解决OneNote打不开</a></li>
 <li><a href="#切换中文语言">切换中文语言</a></li>
+<li><a href="#解决中文输入法">解决中文输入法</a></li>
 <li><a href="#破解">破解</a></li>
 </ul></li>
 <li><a href="#问题遗留">问题遗留</a></li>
@@ -410,7 +411,7 @@
 
 <h1 id="功能介绍">功能介绍</h1>
 
-<p>一些基础概念这篇就不介绍了，可以看上篇<a href="/posts/wine-photoshop-cs6/">Photoshop-CS6</a>，这里介绍一下PlayOnLinux的Configure功能下的部分选项（经教程在Fedora24和26环境下测试通过）。</p>
+<p>一些基础概念这篇就不介绍了，可以看上篇<a href="/posts/wine-photoshop-cs6/">Photoshop-CS6</a>，这里介绍一下PlayOnLinux的Configure功能下的部分选项（该教程在Fedora24和26环境下测试通过）。</p>
 
 <ul>
 <li><p><strong>1. General</strong>
@@ -457,7 +458,8 @@
 <li>6. 解决黑屏</li>
 <li>7. 解决OneNote打不开</li>
 <li>8. 切换中文语言</li>
-<li>9. 破解</li>
+<li>9. 解决中文输入法</li>
+<li>10. 破解</li>
 </ul>
 
 <h2 id="下载office2013-32位">下载Office2013（32位）</h2>
@@ -619,7 +621,7 @@ exit
 &gt; regsvr32 tpcps.dll
 </code></pre>
 
-<p><code>注意：</code>如果提示报错<code>error while loading shared libraries: libudev.so.0</code>执行下面的命令，然后重新尝试安装</p>
+<p><code>注意：</code>如果提示报错<code>error while loading shared libraries: libudev.so.0</code>执行下面的命令，然后重新尝试安装补丁文件。</p>
 
 <pre><code class="language-shell">ln -sf /usr/lib/libudev.so.1   /usr/lib/libudev.so.0
 </code></pre>
@@ -640,6 +642,18 @@ exit
 
 <p>设定好关闭软件重新打开，即可完成语言的切换。</p>
 
+<h2 id="解决中文输入法">解决中文输入法</h2>
+
+<p>随便打开一个Office软件 -&gt; 文件 -&gt; 选项 -&gt; 高级</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> 输入法控制处于活动状态（<code>取消打勾</code>）</label></li>
+</ul>
+
+<p>关闭软件，重新打开即可。如果不能生效，请重启系统输入法管理软件<code>Fcitx</code>。</p>
+
+<p><img src="https://res.cloudinary.com/devops007/image/upload/v1527659534/System/Wine/Office2013/input.png" alt="input" /></p>
+
 <h2 id="破解">破解</h2>
 
 <p>&emsp;&emsp;目前PlayOnLinux并没有为Office2013提供破解方法，不像Office2010提供了actived的工程，我尝试用KMS软件通过</br>
@@ -650,8 +664,8 @@ exit
 <h1 id="问题遗留">问题遗留</h1>
 
 <ul>
-<li><code>1.</code>输入法存在问题，无法在Office里边切换中文输入法，有待解决</li>
-<li><code>2.</code>在Gnome3桌面下，运行不稳定，偶尔会Crash掉，KDE桌面稳定一些。</li>
+<li><code>1.</code>非Ctrl-s的文件保存方式偶尔会Crash掉。</li>
+<li><code>2.</code>软件内部创建文件不稳定，建议先创建后缀文件比如.docx .ppt .xlsx 等，再通过鼠标右键选择对应的Office2013软件打开，编辑、保存比较稳定。</li>
 </ul>
 
 <h1 id="总结">总结</h1>
@@ -704,7 +718,7 @@ exit
     <section id="datecount">
         <h4 id="date"> Thu Apr 26, 2018</h4>
     </section>
-    <h5 id="wc">3400 Words|Read in about 7 Min</h5>
+    <h5 id="wc">3500 Words|Read in about 7 Min</h5>
     <h5 id="tags">Tags: 
         
         <a href="https://linuxer.io/tags/linux/">linux</a> &nbsp;

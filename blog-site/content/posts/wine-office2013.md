@@ -13,7 +13,7 @@ tags: ["linux", "wine", "PlayOnLinux", "Office2013"]
 
 # 功能介绍
 
-一些基础概念这篇就不介绍了，可以看上篇[Photoshop-CS6](/posts/wine-photoshop-cs6/)，这里介绍一下PlayOnLinux的Configure功能下的部分选项（经教程在Fedora24和26环境下测试通过）。
+一些基础概念这篇就不介绍了，可以看上篇[Photoshop-CS6](/posts/wine-photoshop-cs6/)，这里介绍一下PlayOnLinux的Configure功能下的部分选项（该教程在Fedora24和26环境下测试通过）。
 
 - __1. General__
   ![General](https://res.cloudinary.com/devops007/image/upload/v1527250610/System/Wine/Office2013/General.png)
@@ -50,7 +50,8 @@ tags: ["linux", "wine", "PlayOnLinux", "Office2013"]
 - 6. 解决黑屏
 - 7. 解决OneNote打不开
 - 8. 切换中文语言
-- 9. 破解
+- 9. 解决中文输入法
+- 10. 破解
 
 ## 下载Office2013（32位）
 &emsp;&emsp;如果需要中文版，务必下载32位的中文版，否则，不好汉化。[这里是中文版下载链接](https://www.microsoft.com/zh-CN/download/details.aspx?id=42017),下载完成后解压，找到setup.exe文件的路径，后面要用到。
@@ -196,13 +197,14 @@ exit
 > regsvr32 tpcps.dll
 ```
 
-`注意：`如果提示报错`error while loading shared libraries: libudev.so.0`执行下面的命令，然后重新尝试安装
+`注意：`如果提示报错`error while loading shared libraries: libudev.so.0`执行下面的命令，然后重新尝试安装补丁文件。
 
 ```shell
 ln -sf /usr/lib/libudev.so.1   /usr/lib/libudev.so.0
 ```
 
 不出意外的话，可以保证OneNote顺利打开。
+
 
 ## 切换中文语言
 在安装中文版后，默认打开仍然是英文版的，这是因为我们缺少Windows字体，找一个windows系统打包Fonts目录，拷贝到下面的目录
@@ -218,6 +220,16 @@ ln -sf /usr/lib/libudev.so.1   /usr/lib/libudev.so.0
 
 设定好关闭软件重新打开，即可完成语言的切换。
 
+## 解决中文输入法
+
+随便打开一个Office软件 -> 文件 -> 选项 -> 高级
+
+- [ ] 输入法控制处于活动状态（`取消打勾`）
+
+关闭软件，重新打开即可。如果不能生效，请重启系统输入法管理软件`Fcitx`。
+
+![input](https://res.cloudinary.com/devops007/image/upload/v1527659534/System/Wine/Office2013/input.png)
+
 ## 破解
 &emsp;&emsp;目前PlayOnLinux并没有为Office2013提供破解方法，不像Office2010提供了actived的工程，我尝试用KMS软件通过</br>
 `Configure -> Office2013 -> Miscellaneous -> Run a.exe file this virtual drive`</br>
@@ -225,8 +237,8 @@ ln -sf /usr/lib/libudev.so.1   /usr/lib/libudev.so.0
 ![pojie](https://res.cloudinary.com/devops007/image/upload/v1527250466/System/Wine/Office2013/pojie.png)
 
 # 问题遗留
-- `1. `输入法存在问题，无法在Office里边切换中文输入法，有待解决
-- `2. `在Gnome3桌面下，运行不稳定，偶尔会Crash掉，KDE桌面稳定一些。
+- `1. `非Ctrl-s的文件保存方式偶尔会Crash掉。
+- `2. `软件内部创建文件不稳定，建议先创建后缀文件比如.docx .ppt .xlsx 等，再通过鼠标右键选择对应的Office2013软件打开，编辑、保存比较稳定。
 
 # 总结
 &emsp;&emsp;目前我在Gnome3桌面测试安装好的Office2013，发现运行还不是很稳定，但是可以使用，在KDE桌面下运行能够稳定一些。因此希望后面有人能提出好的解决办法。安装过程中大家遇到问题和我不同，注意报错信息，在论坛搜索答案一般都是可以解决的。我在安装的时候，使用PlayOnLinux的__`4.2.11`__版本，但是此版本存在Bug，无法使用Miscellaneous -> Open a shell, 因此降低了一个版本，使用了__`4.2.10`__,下面展示了Excel和World的运行截图。
