@@ -36,10 +36,10 @@
                 {{ end }}
             </div>
             {{ end }}
-            <!-- post metadata-->
+            <!-- post metadata 末尾不再显示统计 -->
             {{ if isset .Params "postmeta" }}
               {{ else }}
-            {{ partial "postmeta.html" . }}
+              <!-- {{ partial "postmeta.html" . }} -->
             {{ end }}
             </div>
         </div>
