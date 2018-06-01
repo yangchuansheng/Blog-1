@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compiz Fusion on devops007</title>
+    <link>https://linuxer.io/tags/compiz-fusion/</link>
+    <description>Recent content in Compiz Fusion on devops007</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>caming101006@gmail.com (westos)</managingEditor>
+    <webMaster>caming101006@gmail.com (westos)</webMaster>
+    <lastBuildDate>Wed, 11 Apr 2018 20:50:21 +0800</lastBuildDate>
+    
+	<atom:link href="https://linuxer.io/tags/compiz-fusion/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何在Linux桌面上养鱼</title>
+      <link>https://linuxer.io/posts/compiz-fusion/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>caming101006@gmail.com (westos)</author>
+      <guid>https://linuxer.io/posts/compiz-fusion/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;a href=&#34;http://wiki.compiz.org/&#34;&gt;Compiz&lt;/a&gt; 是第一个由 &lt;a href=&#34;https://zh.wikipedia.org/wiki/OpenGL&#34;&gt;OpenGL&lt;/a&gt;
+ 驱动的运行于 &lt;a href=&#34;https://zh.wikipedia.org/wiki/X_Window_System&#34;&gt;X Window System&lt;/a&gt; 上的混合窗口管理器 。
+ Compiz的混合渲染能力使其可以在窗口管理过程中实现多种视觉效果，比如在矩形虚拟桌面上的窗口最小化。
+ compiz整合了多种特效，最为有趣的是飞雪和养鱼，今天带大家来看看如何在办公桌上养鱼。&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1523446334/cube2.png&#34; alt=&#34;compiz&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

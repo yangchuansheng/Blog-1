@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title> 为Hugo重新渲染Toc目录样式 - linuxer.io|devops007</title>
+  <meta name="description" content="linuxer.io|devops007" />
+  <meta property="og:title" content="为Hugo重新渲染Toc目录样式" />
+  <meta name="twitter:title" content="为Hugo重新渲染Toc目录样式" />
+  <meta name="description" content="&emsp;&emsp;Hugo的皮肤beautifulhugo自带的目录不是很美观，因此我们对{{.TableOfContents}}的模板进行重新渲染，让它美观一些，
+由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了gitbook的
+gitbook-plugin-anchor-navigation-ex
+插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。
+
+
+
+">
+  <meta property="og:description" content="&emsp;&emsp;Hugo的皮肤beautifulhugo自带的目录不是很美观，因此我们对{{.TableOfContents}}的模板进行重新渲染，让它美观一些，
+由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了gitbook的
+gitbook-plugin-anchor-navigation-ex
+插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。
+
+
+
+">
+  <meta name="twitter:description" content="&emsp;&emsp;Hugo的皮肤beautifulhugo自带的目录不是很美观，因此我们对{{.TableOfContents}}的模板进行重新渲染，让它美观一些，
+由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了gitbook的
+gitbook-plugin-anchor-navigation-ex
+插件进行移植,该插件设计风格简单不占页面空间，我们只 …">
+  <meta name="author" content="westos"/>
+  <link href='https://res.cloudinary.com/devops007/image/upload/v1523583145/Linux.png' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png" />
+  <meta name="twitter:image" content="https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@xxx" />
+  <meta name="twitter:creator" content="@xxx" />
+  <meta property="og:url" content="https://linuxer.io/posts/hugo-toc/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="devops007" />
+
+  <meta name="generator" content="Hugo 0.37" />
+  <link rel="canonical" href="https://linuxer.io/posts/hugo-toc/" />
+  <link rel="alternate" href="https://linuxer.io/index.xml" type="application/rss+xml" title="devops007">
+  <script src="https://linuxer.io/js/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="https://linuxer.io/css/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/main.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/toc.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/search.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/blog-title.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/introduction.css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  
+
+<meta name="baidu-site-verification" content="g8IYR9SNLF" />
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?11f7d254cfa4e0ca44b175c66d379ecc";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<link rel="stylesheet" href="https://linuxer.io/css/prism.css" />
+
+
+
+
+
+<link rel="stylesheet" href="https://res.cloudinary.com/devops007/raw/upload/v1523271036/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://res.cloudinary.com/devops007/raw/upload/v1523270276/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://linuxer.io/">devops007</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="About" href="/about">About</a>
+              
+              
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Devolop</a>
+              <div class="navlinks-children">
+                
+                
+                  <a href="https://linuxer.io/categories/linux-c">Linux C/C&#43;&#43;</a>
+                
+                
+                  <a href="https://linuxer.io/categories/python3">Python3</a>
+                
+                
+                  <a href="https://linuxer.io/categories/golang">Golang</a>
+                
+                
+                  <a href="https://linuxer.io/categories/shell">Shell</a>
+                
+                
+                  <a href="https://linuxer.io/categories/awk-sed">Awk&amp;Sed</a>
+                
+                
+                  <a href="https://linuxer.io/categories/lua">Lua</a>
+                
+                
+                  <a href="https://linuxer.io/categories/design-patterns">设计模式</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Gitbooks</a>
+              <div class="navlinks-children">
+                
+                
+                  <a href="https://linuxer.io/sed-and-awk-101-hacks">sed&amp;awk-101个技巧</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Linux" href="/categories/linux/">Linux</a>
+              
+              
+            </li>
+          
+        
+          
+            <li>
+              <a title="Hugo" href="/categories/hugo/">Hugo</a>
+              
+              
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+              
+              
+            </li>
+          
+        
+
+        
+        
+        
+            
+<li>
+     <div class="column">
+         <div id="sb-search" class="sb-search">
+             <form>
+                 <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search" autocomplete="off">
+                 <input class="sb-search-submit" type="text" value="" autocomplete="off">
+                 <span  class="sb-icon-search "></span>
+             </form>
+             <ul class="sb-option">
+             </ul>
+         </div>
+     </div>
+</li>
+
+<script src="https://linuxer.io/js/algoliasearch.min.js"></script>
+
+<script src="https://linuxer.io/js/classie.js"></script>
+<script src="https://linuxer.io/js/uisearch.js"></script>
+
+
+<script>
+    var client = algoliasearch("15QMKYAH3C", "1eb3f0035ce908e604a469c3d87fdf44");
+    var index = client.initIndex('devops-007-blog');
+
+    $(document).ready(function(){
+        new UISearch( document.getElementById( 'sb-search' ) );
+    })
+    .on('input propertychange', '.sb-search-input', function() {
+        var search_str = $(this).val()
+        if (search_str == "") {
+            $(".sb-option").empty()
+        } else {
+            index.search(search_str, function (err, contacts){
+                $(".sb-option").empty()
+                for (var i = 0; i < contacts.hits.length; i++) {
+                    var _li = '<li>' +
+                                  '<a href="/' + contacts.hits[i].uri  + '">'+
+                                      '<span>' + contacts.hits[i].title  + '</span>'+
+                                  '</a>'+
+                              '</li>'
+                    $(".sb-option").append(_li)
+                }
+            });
+        }
+    })
+</script>
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="devops007" href="https://linuxer.io/">
+            <img class="avatar-img" src="https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png" alt="devops007" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://res.cloudinary.com/devops007/image/upload/dpr_0.75/v1523215797/IMG_0165.jpg" data-img-desc-1="May 1,2017"></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        
+        
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-md-offset-0">
+                
+                <div class="post-heading">
+                
+                  
+                     <h1>为Hugo重新渲染Toc目录样式</h1>
+                     
+                    <span class="post-meta">
+  
+  Posted on May 23, 2018
+  
+  
+</span>
+
+
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-md-offset-0">
+            <div class="posts-heading">
+                <h1 align="center">为Hugo重新渲染Toc目录样式</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main" itemscope itemtype="http://schema.org/Article">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+            
+            
+<div>
+    <section id="datecount">
+        <h4 id="date"> Wed May 23, 2018</h4>
+    </section>
+    <h5 id="wc">2600 Words | <i class="fa fa-clock-o" style="color:#000">&nbsp</i>5 Min | 
+        <span id="busuanzi_container_page_pv">
+            <i class="fa fa-eye" style="color:#000"></i>
+            
+            <span id="busuanzi_value_page_pv"><i class="fa fa-cog fa-spin fa-1x fa-fw" aria-hidden="true" style="color:#8B008B;"></i></span>
+        </span>Views
+    </h5>
+    <h5 id="tags">Tags: 
+        
+        <a href="https://linuxer.io/tags/hugo/">hugo</a> &nbsp;
+        
+        <a href="https://linuxer.io/tags/beautifulhugo/">beautifulhugo</a> &nbsp;
+        
+        <a href="https://linuxer.io/tags/toc/">Toc</a> &nbsp;
+    </h5>
+</div>
+
+            
+            <article role="main" class="blog-post" itemprop="articleBody" id="content">
+                
+  
+  <aside class="toc">
+    <div id='anchors-navbar'>
+        <i class='fa fa-anchor'></i>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#效果展示">效果展示</a></li>
+<li><a href="#处理步骤">处理步骤</a>
+<ul>
+<li><a href="#利用js重写-tableofcontents-模板内容">利用js重写{{.TableOfContents}}模板内容</a>
+<ul>
+<li><a href="#为-tableofcontents-模板前后增加元素">为{{.TableOfContents}}模板前后增加元素</a></li>
+<li><a href="#对比-tableofcontents-模板修改前后的内容">对比{{ .TableOfContents }}模板修改前后的内容</a></li>
+<li><a href="#重新渲染-tableofcontents-模板">重新渲染{{ .TableOfContents }}模板</a></li>
+</ul></li>
+<li><a href="#为模板-tableofcontents-增加css样式">为模板{{ .TableOfContents }}增加css样式</a></li>
+</ul></li>
+<li><a href="#总结">总结</a></li>
+<li><a href="#参考">参考</a></li>
+</ul>
+</nav>
+    </div>
+    <a href="#" id="GoTop">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+  </aside>
+  
+
+
+                <p>&emsp;&emsp;<code>Hugo</code>的皮肤<code>beautifulhugo</code>自带的目录不是很美观，因此我们对<code>{{.TableOfContents}}</code>的模板进行重新渲染，让它美观一些，
+由于不是专业的前端，css水平几乎为0，因此我需要找一个现成的插件进行移植，这里选取了<code>gitbook</code>的
+<a href="https://github.com/zq99299/gitbook-plugin-anchor-navigation-ex">gitbook-plugin-anchor-navigation-ex</a>
+插件进行移植,该插件设计风格简单不占页面空间，我们只引用其中的css文件，js由我们自己编写。</p>
+
+<!--<figure>
+    <img src="https://res.cloudinary.com/devops007/image/upload/v1527262700/beautifulhugo/Toc/toc.gif" width="1000">
+</figure> -->
+
+<p></p>
+
+<h1 id="效果展示">效果展示</h1>
+
+<p>&emsp;&emsp;直接将鼠标移到右上侧图标处，即可展开目录，将鼠标移至右下侧图标处可回到顶部</p>
+
+<h1 id="处理步骤">处理步骤</h1>
+
+<p>&emsp;&emsp;由于无法直接修改{{ .TableOfContents }}生成的内容，这是由Hugo预先定义好的Toc模板，因此我们
+的思路是在html加载完成后，利用js重写</br>{{ .TableOfContents }}的内容，再加上我们预先定义好的css文件即可。</p>
+
+<ul>
+<li><code>1</code>. 为{{.TableOfContents}}模板外围，增加<code>目录</code>和<code>返回顶部</code>的html元素</li>
+<li><code>2</code>. 在main.js中解析{{.TableOfContents}}模板的原始内容，重新构造否合我们css样式的模板内容
+
+<ul>
+<li>递归抽取{{.TableOfContents}}模板下的标题内容</li>
+<li>递归生成{{.TableOfContents}}模板的内容，增加手势图标和目录号</li>
+<li>用新生成的html内容替换{{.TableOfContents}}模板的内容</li>
+</ul></li>
+<li><code>3</code>. 调整css样式(主要是位置)直到我们满意为止</li>
+</ul>
+
+<h2 id="利用js重写-tableofcontents-模板内容">利用js重写{{.TableOfContents}}模板内容</h2>
+
+<p>&emsp;&emsp;通过js脚本在html加载完成后，递归解析{{.TableOfContents}}模板ul的li元素，重写该模板。</p>
+
+<h3 id="为-tableofcontents-模板前后增加元素">为{{.TableOfContents}}模板前后增加元素</h3>
+
+<p>&emsp;&emsp;toc.html文件如下,增加<code>目录</code>和<code>返回顶部</code>的html元素，通过前端观察发现{{ .TableOfContents }}模板展开后是
+<code>&lt;nav id=&quot;TableOfContents&quot;&gt; ... &lt;/nav&gt;</code>可通过$(&ldquo;#TableOfContents&rdquo;)获取该jQuery对象</p>
+
+<pre><code class="language-html">{{ if not .Params.notoc }}
+  {{ if or .Params.toc (and (gt .WordCount 400 ) (ne .Params.toc &quot;false&quot;)) }}
+  &lt;aside class=&quot;toc&quot;&gt;
+    &lt;div id='anchors-navbar'&gt;
+        &lt;i class='fa fa-anchor'&gt;&lt;/i&gt;
+        {{ .TableOfContents }}
+    &lt;/div&gt;
+    &lt;a href=&quot;#&quot; id=&quot;GoTop&quot;&gt;
+        &lt;i class=&quot;fa fa-arrow-up&quot;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/aside&gt;
+  {{ end }}
+{{ end }}
+</code></pre>
+
+<h3 id="对比-tableofcontents-模板修改前后的内容">对比{{ .TableOfContents }}模板修改前后的内容</h3>
+
+<ul>
+<li>{{ .TableOfContents }}模板生成的原始内容</li>
+</ul>
+
+<pre><code class="language-html">&lt;ul&gt;
+   &lt;li&gt;&lt;a href=&quot;#gnu-sed-replacement-string-标志&quot;&gt;Gnu Sed {replacement-string}标志&lt;/a&gt;&lt;/li&gt;
+   &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#l&quot;&gt;\l&lt;/a&gt;&lt;/li&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#你好&quot;&gt;你好&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#你好-1&quot;&gt;你好&lt;/a&gt;&lt;/li&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#hello&quot;&gt;hello&lt;/a&gt;&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;#world&quot;&gt;world&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#你好-2&quot;&gt;你好&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#l-1&quot;&gt;\L&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#u&quot;&gt;\u&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#u-1&quot;&gt;\U&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#e&quot;&gt;\E&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;li&gt;&lt;a href=&quot;#replacement-string-标志的用法&quot;&gt;{replacement-string}标志的用法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</code></pre>
+
+<ul>
+<li>{{ .TableOfContents }}模板修改后的内容</li>
+</ul>
+
+<pre><code class="language-html">
+&lt;ul&gt;
+   &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt; &lt;a href=&quot;#gnu-sed-replacement-string-标志&quot;&gt;&lt;b&gt;1. &lt;/b&gt;Gnu Sed {replacement-string}标志&lt;/a&gt;&lt;/li&gt;
+   &lt;ul&gt;
+        &lt;li&gt; &lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt; &lt;a href=&quot;#l&quot;&gt;&lt;b&gt;1.1. &lt;/b&gt;\l&lt;/a&gt;&lt;/li&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#你好&quot;&gt;&lt;b&gt;1.1.1. &lt;/b&gt;你好&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#你好-1&quot;&gt;&lt;b&gt;1.1.2. &lt;/b&gt;你好&lt;/a&gt;&lt;/li&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#hello&quot;&gt;&lt;b&gt;1.1.2.1. &lt;/b&gt;hello&lt;/a&gt;&lt;/li&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#world&quot;&gt;&lt;b&gt;1.1.2.1.1. &lt;/b&gt;world&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/ul&gt;
+        &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#你好-2&quot;&gt;&lt;b&gt;1.1.3. &lt;/b&gt;你好&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+        &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#l-1&quot;&gt;&lt;b&gt;1.2. &lt;/b&gt;\L&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#u&quot;&gt;&lt;b&gt;1.3. &lt;/b&gt;\u&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#u-1&quot;&gt;&lt;b&gt;1.4. &lt;/b&gt;\U&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#e&quot;&gt;&lt;b&gt;1.5. &lt;/b&gt;\E&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;li&gt;&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;&lt;a href=&quot;#replacement-string-标志的用法&quot;&gt;&lt;b&gt;2. &lt;/b&gt;{replacement-string}标志的用法&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</code></pre>
+
+<h3 id="重新渲染-tableofcontents-模板">重新渲染{{ .TableOfContents }}模板</h3>
+
+<p>这里我们为main.js引入3个方法，分别为:iterativeUL、iterativeUI、initNavigations</p>
+
+<ul>
+<li><strong>递归解析模板{{ .TableOfContents }}的ul结构</strong></li>
+</ul>
+
+<pre><code class="language-js">iterativeUL: function($dom) {
+    var li_list = []
+    $dom.children(&quot;li&quot;).each(function(i, item) {
+        var _li = { 
+            url: $(item).children(&quot;a&quot;).attr(&quot;href&quot;), 
+            name: $(item).children(&quot;a&quot;).text(),
+            children: []
+        }   
+        $sub_ul = $(item).children(&quot;ul&quot;)
+        if ($sub_ul.length &gt; 0) {
+            _li.children = main.iterativeUL($sub_ul)
+        }   
+        li_list.push(_li)
+    })  
+    return li_list
+}
+</code></pre>
+
+<ul>
+<li><strong>递归合成模板{{ .TableOfContents }}的ul结构</strong></li>
+</ul>
+
+<pre><code class="language-js">iterativeUI: function(root, template, prefix) {
+    template += &quot;&lt;ul&gt;&quot;
+    $.each(root, function(i, item) {
+        var next_prefix = prefix + String(i+1) + &quot;.&quot; 
+        template += '&lt;li&gt;'+
+                        '&lt;i class=&quot;fa fa-hand-o-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;'+
+                        '&lt;span class=&quot;title-icon &quot;&gt;&lt;/span&gt;'+
+                        '&lt;a href=&quot;99991997&quot;&gt;&lt;b&gt;99991998  &lt;/b&gt;99991999&lt;/a&gt;'
+                           .replace(&quot;99991997&quot;, item.url)
+                           .replace(&quot;99991999&quot;, item.name)
+                           .replace(&quot;99991998&quot;, next_prefix) +
+                    '&lt;/li&gt;'
+        if (item.children.length &gt; 0) {
+            template = main.iterativeUI(item.children, template, next_prefix)
+        }   
+    })  
+    template += &quot;&lt;/ul&gt;&quot;
+    return template
+}
+</code></pre>
+
+<ul>
+<li><strong>入口方法，替换模板{{ .TableOfContents }}为新生成ul结构，重新渲染Toc</strong></li>
+</ul>
+
+<pre><code class="language-js">initNavigations: function() {
+    var $navigations = $(&quot;#TableOfContents&quot;);
+    /* 这是个大坑, 需要大于号&gt;来限制只选择一级子元素，否则会有多组ul被匹配到 */
+    var root = main.iterativeUL($(&quot;#TableOfContents &gt; ul&quot;))
+    if (root.length &lt;= 0) {
+        return;
+    }
+
+    var html = main.iterativeUI(root, '', '')
+    $navigations.html(html)
+}
+</code></pre>
+
+<h2 id="为模板-tableofcontents-增加css样式">为模板{{ .TableOfContents }}增加css样式</h2>
+
+<p>toc.css文件如下:</p>
+
+<pre><code class="language-css">/* 浮动导航 */
+#anchors-navbar {
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-radius: 1px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-clip: padding-box;
+    padding: 5px 10px;
+    position: fixed;
+    right: 50px;
+    top: 68px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 999;
+    cursor: pointer;
+    text-align: right;
+    max-height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#anchors-navbar ul{
+    display: none;
+    text-align: left;
+    padding-right: 10px;
+    padding-left: 18px;
+    padding-top: 5px;
+    list-style-type: none;
+}
+
+#anchors-navbar:hover ul{
+    display: block;
+}
+
+#anchors-navbar ul li a {
+    text-decoration: none;
+    border-bottom: none;
+    font-size: 14px;
+    color: #364149;
+    background: 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    font-weight: bold;
+}
+
+#anchors-navbar ul li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #0000FF;
+}
+
+#anchors-navbar ul li .title-icon {
+    padding-right: 4px;
+}
+
+/* 返回顶部 */
+#GoTop {
+    position: fixed;
+    right: 50px;
+    bottom: 68px;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, .07);
+    border-radius: 1px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background-clip: padding-box;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #364149;
+}
+</code></pre>
+
+<h1 id="总结">总结</h1>
+
+<p>&emsp;&emsp;以上方案只是一个简单例子，大家可以为自己设计更漂亮的目录样式，希望能够抛砖引玉。这里只是展示一种重新渲染
+模板的思路，在我们选取了一个主题后，可以基于该主题设计完善符合我们自己个性的内容，下一篇我们来重新设计基于algolia搜索
+的beautifulhugo主题的搜索框。</p>
+
+<h1 id="参考">参考</h1>
+
+<ul>
+<li><a href="https://github.com/zq99299/gitbook-plugin-anchor-navigation-ex">gitbook的gitbook-plugin-anchor-navigation-ex插件</a></li>
+<li><a href="https://gohugo.io/content-management/toc/">Hugo 官方对于Toc的介绍</a></li>
+</ul>
+            </article>
+
+            <ul class="pager blog-pager">
+                
+                <li class="previous">
+                    <a href="https://linuxer.io/posts/wine-office2013/" data-toggle="tooltip" data-placement="top" title="Linux安装Office2013">&larr; Previous Post</a>
+                </li>
+                 
+                <li class="next">
+                    <a href="https://linuxer.io/posts/hugo-search/" data-toggle="tooltip" data-placement="top" title="为Hugo设计搜索框">Next Post &rarr;</a>
+                </li>
+                
+            </ul>
+            
+            <div>
+                 
+            </div>
+            
+            
+            
+              
+            
+            </div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+            
+                
+                  
+                  <aside >
+    
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjc1MC8xMzI4NQ=="> 
+    	<script type="text/javascript">
+            (function(d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+    
+                if (typeof LivereTower === 'function') { return; }
+    
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+    
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+    	</script>
+        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+    
+</aside>
+
+                
+            
+        </div>
+    </div>
+    </section>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:caming101006@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/xxx" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/&#43;xxxxx" title="Google&#43;">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/devops007" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/xxx" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/xxx" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/xxx" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://500px.com/xxx" title="500px">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-500px fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://medium.com/@xxx" title="medium">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="http://weibo.com/xxx" title="weibo">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://linuxer.io/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+        &copy;2017-2018
+          
+            
+              <a href="https://linuxer.io">westos</a>
+            
+          
+          
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://linuxer.io/">devops007</a>
+          
+        </p>
+        <p class="credits theme-by text-muted">
+            
+        </p>
+
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.37</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://linuxer.io/js/bootstrap.min.js"></script>
+<script src="https://linuxer.io/js/photoswipe-ui-default.min.js"></script>
+<script src="https://linuxer.io/js/photoswipe.min.js"></script>
+<script src="https://linuxer.io/js/auto-render.min.js"></script>
+<script src="https://linuxer.io/js/main.js"></script> 
+<script src="https://linuxer.io/js/prism.js"></script>
+<script src="https://linuxer.io/js/katex.min.js"></script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+
+
+  </body>
+</html>
+

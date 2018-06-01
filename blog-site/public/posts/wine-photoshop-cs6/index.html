@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title> Linux安装Photoshop-CS6 - linuxer.io|devops007</title>
+  <meta name="description" content="linuxer.io|devops007" />
+  <meta property="og:title" content="Linux安装Photoshop-CS6" />
+  <meta name="twitter:title" content="Linux安装Photoshop-CS6" />
+  <meta name="description" content="&emsp;&emsp;Photoshop强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
+PS软件是非常方便的，虽然Linux环境下拥有替代产品IMP,但是习惯PS的我还是想在Linux上实现这一目标，由于Windows环境不在考虑范围内，Mac也不是人人都有，但是感谢Wine社区的努力，让我们
+在Linux环境底下运行.exe程序不再是梦想，喜欢打游戏的IT人员一定会爱上它的，而且最近我在YouTobe上看到了有人成功移植了LOL。
+
+">
+  <meta property="og:description" content="&emsp;&emsp;Photoshop强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
+PS软件是非常方便的，虽然Linux环境下拥有替代产品IMP,但是习惯PS的我还是想在Linux上实现这一目标，由于Windows环境不在考虑范围内，Mac也不是人人都有，但是感谢Wine社区的努力，让我们
+在Linux环境底下运行.exe程序不再是梦想，喜欢打游戏的IT人员一定会爱上它的，而且最近我在YouTobe上看到了有人成功移植了LOL。
+
+">
+  <meta name="twitter:description" content="&emsp;&emsp;Photoshop强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
+PS软件是非常方便的，虽然Linux环境下拥有替代产品IMP,但是习惯PS的我还是想在Linux上实现这一目标，由于Windows环境不在考虑范围内，Mac也不是人人都有，但是感谢Wine社区的努 …">
+  <meta name="author" content="westos"/>
+  <link href='https://res.cloudinary.com/devops007/image/upload/v1523583145/Linux.png' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png" />
+  <meta name="twitter:image" content="https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@xxx" />
+  <meta name="twitter:creator" content="@xxx" />
+  <meta property="og:url" content="https://linuxer.io/posts/wine-photoshop-cs6/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="devops007" />
+
+  <meta name="generator" content="Hugo 0.37" />
+  <link rel="canonical" href="https://linuxer.io/posts/wine-photoshop-cs6/" />
+  <link rel="alternate" href="https://linuxer.io/index.xml" type="application/rss+xml" title="devops007">
+  <script src="https://linuxer.io/js/jquery-1.12.4.min.js"></script>
+  <link rel="stylesheet" href="https://linuxer.io/css/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/main.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/toc.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/search.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/blog-title.css" />
+  
+  <link rel="stylesheet" href="https://linuxer.io/css/introduction.css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  
+
+<meta name="baidu-site-verification" content="g8IYR9SNLF" />
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?11f7d254cfa4e0ca44b175c66d379ecc";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<link rel="stylesheet" href="https://linuxer.io/css/prism.css" />
+
+
+
+
+
+<link rel="stylesheet" href="https://res.cloudinary.com/devops007/raw/upload/v1523271036/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://res.cloudinary.com/devops007/raw/upload/v1523270276/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://linuxer.io/">devops007</a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="About" href="/about">About</a>
+              
+              
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Devolop</a>
+              <div class="navlinks-children">
+                
+                
+                  <a href="https://linuxer.io/categories/linux-c">Linux C/C&#43;&#43;</a>
+                
+                
+                  <a href="https://linuxer.io/categories/python3">Python3</a>
+                
+                
+                  <a href="https://linuxer.io/categories/golang">Golang</a>
+                
+                
+                  <a href="https://linuxer.io/categories/shell">Shell</a>
+                
+                
+                  <a href="https://linuxer.io/categories/awk-sed">Awk&amp;Sed</a>
+                
+                
+                  <a href="https://linuxer.io/categories/lua">Lua</a>
+                
+                
+                  <a href="https://linuxer.io/categories/design-patterns">设计模式</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">Gitbooks</a>
+              <div class="navlinks-children">
+                
+                
+                  <a href="https://linuxer.io/sed-and-awk-101-hacks">sed&amp;awk-101个技巧</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Linux" href="/categories/linux/">Linux</a>
+              
+              
+            </li>
+          
+        
+          
+            <li>
+              <a title="Hugo" href="/categories/hugo/">Hugo</a>
+              
+              
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+              
+              
+            </li>
+          
+        
+
+        
+        
+        
+            
+<li>
+     <div class="column">
+         <div id="sb-search" class="sb-search">
+             <form>
+                 <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search" autocomplete="off">
+                 <input class="sb-search-submit" type="text" value="" autocomplete="off">
+                 <span  class="sb-icon-search "></span>
+             </form>
+             <ul class="sb-option">
+             </ul>
+         </div>
+     </div>
+</li>
+
+<script src="https://linuxer.io/js/algoliasearch.min.js"></script>
+
+<script src="https://linuxer.io/js/classie.js"></script>
+<script src="https://linuxer.io/js/uisearch.js"></script>
+
+
+<script>
+    var client = algoliasearch("15QMKYAH3C", "1eb3f0035ce908e604a469c3d87fdf44");
+    var index = client.initIndex('devops-007-blog');
+
+    $(document).ready(function(){
+        new UISearch( document.getElementById( 'sb-search' ) );
+    })
+    .on('input propertychange', '.sb-search-input', function() {
+        var search_str = $(this).val()
+        if (search_str == "") {
+            $(".sb-option").empty()
+        } else {
+            index.search(search_str, function (err, contacts){
+                $(".sb-option").empty()
+                for (var i = 0; i < contacts.hits.length; i++) {
+                    var _li = '<li>' +
+                                  '<a href="/' + contacts.hits[i].uri  + '">'+
+                                      '<span>' + contacts.hits[i].title  + '</span>'+
+                                  '</a>'+
+                              '</li>'
+                    $(".sb-option").append(_li)
+                }
+            });
+        }
+    })
+</script>
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="devops007" href="https://linuxer.io/">
+            <img class="avatar-img" src="https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png" alt="devops007" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://res.cloudinary.com/devops007/image/upload/v1527247808/System/Wine/PhotoShop/wine-1.jpg" data-img-desc-1="苏州苏州湾 May 5,2017"></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        
+        
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-md-offset-0">
+                
+                <div class="post-heading">
+                
+                  
+                     <h1>Linux安装Photoshop-CS6</h1>
+                     
+                    <span class="post-meta">
+  
+  Posted on April 25, 2018
+  
+  
+</span>
+
+
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-md-offset-0">
+            <div class="posts-heading">
+                <h1 align="center">Linux安装Photoshop-CS6</h1>
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main" itemscope itemtype="http://schema.org/Article">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+            
+            
+<div>
+    <section id="datecount">
+        <h4 id="date"> Wed Apr 25, 2018</h4>
+    </section>
+    <h5 id="wc">3500 Words | <i class="fa fa-clock-o" style="color:#000">&nbsp</i>7 Min | 
+        <span id="busuanzi_container_page_pv">
+            <i class="fa fa-eye" style="color:#000"></i>
+            
+            <span id="busuanzi_value_page_pv"><i class="fa fa-cog fa-spin fa-1x fa-fw" aria-hidden="true" style="color:#8B008B;"></i></span>
+        </span>Views
+    </h5>
+    <h5 id="tags">Tags: 
+        
+        <a href="https://linuxer.io/tags/linux/">linux</a> &nbsp;
+        
+        <a href="https://linuxer.io/tags/wine/">wine</a> &nbsp;
+        
+        <a href="https://linuxer.io/tags/playonlinux/">PlayOnLinux</a> &nbsp;
+        
+        <a href="https://linuxer.io/tags/photoshop-cs6/">Photoshop-CS6</a> &nbsp;
+    </h5>
+</div>
+
+            
+            <article role="main" class="blog-post" itemprop="articleBody" id="content">
+                
+  
+  <aside class="toc">
+    <div id='anchors-navbar'>
+        <i class='fa fa-anchor'></i>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="#wine是什么">Wine是什么？</a></li>
+<li><a href="#wine可以干什么">Wine可以干什么?</a></li>
+<li><a href="#借助playonlinux安装wine">借助PlayOnLinux安装Wine</a></li>
+<li><a href="#安装photoshop-cs6">安装Photoshop-CS6</a>
+<ul>
+<li><a href="#下载photoshop-cs6-32位">下载Photoshop-CS6（32位）</a></li>
+<li><a href="#安装wine">安装wine</a></li>
+<li><a href="#指定setup-exe文件路径">指定setup.exe文件路径</a></li>
+<li><a href="#安装photoshop-cs6-必须断网">安装Photoshop-CS6（必须断网）</a></li>
+<li><a href="#破解">破解</a></li>
+<li><a href="#解决中文乱码">解决中文乱码</a></li>
+</ul></li>
+<li><a href="#总结">总结</a></li>
+<li><a href="#参考">参考</a></li>
+</ul>
+</nav>
+    </div>
+    <a href="#" id="GoTop">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+  </aside>
+  
+
+
+                <p>&emsp;&emsp;<code>Photoshop</code>强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
+PS软件是非常方便的，虽然Linux环境下拥有替代产品<code>IMP</code>,但是习惯PS的我还是想在Linux上实现这一目标，由于Windows环境不在考虑范围内，Mac也不是人人都有，但是感谢<code>Wine</code>社区的努力，让我们
+在Linux环境底下运行<code>.exe</code>程序不再是梦想，喜欢打游戏的IT人员一定会爱上它的，而且最近我在YouTobe上看到了有人成功移植了LOL。
+<img src="https://res.cloudinary.com/devops007/image/upload/v1527245761/System/Wine/PhotoShop/Adobe-Photoshop-CS6.png" alt="CS6" />
+</p>
+
+<h1 id="wine是什么">Wine是什么？</h1>
+
+<p>&emsp;&emsp;Wine不是Windows模拟器，而是运用API转换技术实做出Linux对应到Windows相对应的函数来调用DLL以运行Windows程序。Wine可以工作在绝大多数的UNIX版本下,包括Linux, FreeBSD, 和 Solaris。另外，也有适用于Mac OS X的Wine程序。Wine不需要Microsoft Windows, 因为这是一个完全由百分之百的免费代码组成的。如果有可利用的副本的话，它也可以随意地使用本地系统的DLLs。Wine的发布是完全公开源代码的，并且是免费发行的。(基于LGPL发布:GNU宽通用公共许可证)
+关于Wine的真正含义，有人对&rdquo;Wine Is Not an Emulator&rdquo;的说法表示质疑，认为&rdquo;非模拟器&rdquo;的解释不过是一种娱乐性的说法，Wine的真实意思应当是是Windows Enviroment的缩写，即WinE。</p>
+
+<h1 id="wine可以干什么">Wine可以干什么?</h1>
+
+<ul>
+<li><p><code>1.</code>跑游戏，一些经典的单机游戏都有，具体支持的游戏列表可以去<a href="https://www.playonlinux.com/en/supported_apps.html">官网</a>上看， 也可以在PlayOnLinux上Install列表里查看而且最近我发现一个外国牛人移植了<a href="https://www.youtube.com/watch?v=Atfix4mK5Qg">LOL</a>到Linux上，运行流畅，有时间我也会去尝试一下。</p></li>
+
+<li><p><code>2.</code>办公软件，比如我是一个OneNote的重度使用者，为自己移植了Office2013后，在公司和我家里的windows电脑上的OneNote笔记同步，随时更新。WORD、PPT、Excel也用起来非常顺手，当然如果你用的是MAC，就不需要考虑这么多了，我之所以考虑的多，研究各种Linux系统，没错！就是因为我穷。。。</p></li>
+
+<li><p><code>3.</code>图像处理， 像Adobe系列产品基本都是支持的，比如我们今天讲的PhotoShop-CS6就是一款强悍的图像处理软件。</p></li>
+</ul>
+
+<h1 id="借助playonlinux安装wine">借助PlayOnLinux安装Wine</h1>
+
+<p>&emsp;&emsp;目前大家使用的各个Linux版本都比较强大，关于PlayOnLinux在各大Linux版本上的安装，网上有很多的教程，这里就不再细说了。PlayOnLinux装好之后，Wine自动就装好了。
+Wine是真正运行.exe程序的执行者，PlayOnLinux用来管理Wine的各个版本，隔离软件跑在自己的wine版本环境底下。我安装的是<strong><code>4.2.10</code></strong>版本，最新的4.2.11存在<code>Bug</code>，不能打开shell终端，无法执行
+脚本，希望大家注意一下。
+<img src="https://res.cloudinary.com/devops007/image/upload/v1527234932/System/Wine/PhotoShop/PlayOnLinux.png" alt="PlayOnLinux" /></p>
+
+<h1 id="安装photoshop-cs6">安装Photoshop-CS6</h1>
+
+<p>以下会详细说明每一步的安装步骤和会遇到的问题:</p>
+
+<ul>
+<li>1. 下载Photoshop-CS6软件</li>
+<li>2. 安装wine版本</li>
+<li>3. 指定setup.exe安装文件</li>
+<li>4. 断网安装Photoshop-CS6</li>
+<li>5. 破解</li>
+<li>6. 解决中文乱码</li>
+</ul>
+
+<h2 id="下载photoshop-cs6-32位">下载Photoshop-CS6（32位）</h2>
+
+<p><a href="Photoshop CS6, Photoshop CS6 Extended">https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html</a> -&gt; 展开<code>Photoshop CS6, Photoshop CS6 Extended</code> -&gt; <code>Chinese Simplified</code>（Windows版本）</p>
+
+<pre><code class="language-shell">wget http://trials3.adobe.com/AdobeProducts/PHSP/13/win32/Photoshop_13_LS3.7z
+</code></pre>
+
+<p>下载完成后，解压开找到<code>setup.exe</code>文件，记住路径。</p>
+
+<h2 id="安装wine">安装wine</h2>
+
+<p>打开PlayOnLinux -&gt; Tools -&gt; Manager Wine versions -&gt; (X86) -&gt; 选择3.4</p>
+
+<p><img src="https://res.cloudinary.com/devops007/image/upload/v1527236482/System/Wine/PhotoShop/Wine-version.png" alt="wine-version" />
+<code>注意：</code>该步骤也可不做，因为PlayOnLinux会根据软件自动选择合适的wine版本，建议跳过该步骤（该步骤在下一篇脚本安装Office2013的时候会用到）</p>
+
+<h2 id="指定setup-exe文件路径">指定setup.exe文件路径</h2>
+
+<p>打开PlayOnLinux -&gt; Install -&gt; 搜索Photo..出来后 -&gt; 选中Adobe Photoshop CS6 -&gt; 点击右下角install
+<img src="https://res.cloudinary.com/devops007/image/upload/v1527236836/System/Wine/PhotoShop/ps-install.png" alt="ps-install" /></p>
+
+<p>一路Next -&gt; 遇到Browse时选择我们刚才setup.exe文件，然后一路Next -&gt; 版本选择32（wine仅支持32位）-&gt; 一路next -&gt; 在Photoshop的setup.exe文件运行后，剩下的就是真正安装PhotoShop的过程
+<img src="https://res.cloudinary.com/devops007/image/upload/v1527237471/System/Wine/PhotoShop/ps-brows.png" alt="brows" /></p>
+
+<h2 id="安装photoshop-cs6-必须断网">安装Photoshop-CS6（必须断网）</h2>
+
+<p><strong><code>断网</code></strong> -&gt; 选择安装（我有序列号） -&gt; 输入序列号（随便选择一个） -&gt; 提示无法连接网络（选择<code>稍后连接</code>）</br>-&gt; 勾选上所有的安装选项（不建议修改安装路径） -&gt; 开始安装 -&gt; 安装完成后关闭（不要打开软件）</p>
+
+<pre><code class="language-json">1330-1692-9902-6314-3617-7501
+1330-1118-3520-6264-1054-3630
+1330-1068-5620-4840-9508-1915
+1330-1815-5938-9647-9527-4510
+</code></pre>
+
+<h2 id="破解">破解</h2>
+
+<p>下载：<a href="http://res.cloudinary.com/devops007/raw/upload/v1527238675/System/Wine/PhotoShop/amtlib.dll">32位破解补丁</a></p>
+
+<pre><code class="language-shell">wget http://res.cloudinary.com/devops007/raw/upload/v1527238675/System/Wine/PhotoShop/amtlib.dll
+</code></pre>
+
+<p>拷贝覆盖掉原安装文件的amtlib.dll文件，路径如下（路径不对，可自行在~/.PlayOnLinux/wineprefix/中用find查找该文件）：</p>
+
+<pre><code class="language-Shell">cp  amtlib.dll  ~/.PlayOnLinux/wineprefix/PhotoshopCS6/drive_c/&quot;Program Files&quot;/Adobe/&quot;Adobe Photoshop CS6&quot;/
+</code></pre>
+
+<p>打开PhotoShop软件，未提示激活信息则表示破解成功，此时可以联网了。</p>
+
+<h2 id="解决中文乱码">解决中文乱码</h2>
+
+<ul>
+<li><p><strong>1. 安装宋体</strong></p>
+
+<pre><code class="language-shell">wget  http://down7.pc6.com/qd3/simsun.zip
+unzip simsun.zip
+mkdir /usr/share/fonts/truetype/wine-fonts
+cp simsun.ttf /usr/share/fonts/truetype/wine-fonts
+fc-cache
+cp simsun.ttf ~/.wine/drive_c/windows/Fonts/
+</code></pre></li>
+
+<li><p><strong>2. 修改注册表</strong></p>
+
+<ul>
+<li>运行命令：wine regedit 打开注册表</li>
+<li>找到HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes在右边窗格找到MS Shell Dlg 把他的值数据修改为simsun</li>
+<li>再找到MS Shell Dlg 2同样也把他的值数据修改为simsun</li>
+<li>然后在右边窗格空白处点鼠标右键：新建–字符串值（名称输入：Tahoma)然后再把这个值数据修改为simsun</li>
+<li>再进入：HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Fonts键值下面，在右边窗格空白处新建一字符串名称是：simsun (TrueType)，再修改此值数据为 z:\usr\share\fonts\truetype\wine-fonts\simsun.ttf （就是字体路径）。</li>
+</ul></li>
+</ul>
+
+<h1 id="总结">总结</h1>
+
+<p>最终软件如下：</p>
+
+<p><img src="https://res.cloudinary.com/devops007/image/upload/v1527240475/System/Wine/PhotoShop/ps-final.png" alt="ps-final" />
+至此，所有步骤走完，就可以使用了，下面是几点说明，希望能解答你遇到的疑惑。</p>
+
+<ul>
+<li><strong>1. <code>为什么没有说明操作系统？</code></strong></li>
+</ul>
+
+<p>&emsp;&emsp;该教程与操作系统无关，现在主流的操作系统Fedora、Ubuntu、OpenSUSE、Mint都可以简单的安装PlayOnLinux，甚至于Centos也是可以尝试一下的,
+我们的重点放在如何理解PlayOnLinux与Wine的关系，如何搭配和使用。（我在Fedora24和26上均测试通过）</p>
+
+<ul>
+<li><strong>2. <code>为什么可以跳过步骤1,不自主选择Wine的版本</code></strong></li>
+</ul>
+
+<p>&emsp;&emsp;所有Install列表列出的软件（只要没有标红）都是已经运行非常稳定的可移植软件，因此这些软件已经定义好了脚本，Wine的版本也确定了下来，而
+Photoshop-CS6对应的稳定Wine版本就是3.4，相当于我们提前下载了而已，没有步骤1,流程也会提醒你需要下载。我们下一节安装Office2013就是一个不稳定版本，
+需要我们自己通过脚本来定义安装过程，目的是为了自定义Wine的版本和调试错误。</p>
+
+<ul>
+<li><strong>3. <code>为什么要断网？</code></strong></li>
+</ul>
+
+<p>&emsp;&emsp;断网是为了让PS无法验证序列号的正确性，然后我们选择稍后连接，这样不影响后续我们安装所有的包，安装完后替换破解补丁让PS误以为我们的软件是已授权的。而如果选择试用，可能
+会造成安装的软件包不全，毕竟需要让你知道不付费的话某些功能是没有或者不能使用的。</p>
+
+<ul>
+<li><strong>4. <code>为什么会乱码？</code></strong></li>
+</ul>
+
+<p>&emsp;&emsp;Photoshop-CS6采用的是宋体，但是我们的系统缺少windows字体，因此需要为系统安装宋体，修改注册表告诉系统simsun.ttf字体的路径，只要能够找到字体，乱码问题就可以得已解决。
+甚至于建议大家把Windows的Fonts目录直接拷贝到<code>~/.wine/drive_c/windows/</code>下，这样就有了所有的字体，为后面的软件打基础。操作系统有个特性，就是需要的字体没找到，会选择相近的字体来使用，但是没有验证过。</p>
+
+<ul>
+<li><strong>5. <code>很不幸，我安装的过程中crash崩溃了，怎么办？</code></strong></li>
+</ul>
+
+<p>&emsp;&emsp;遇到崩溃的问题，建议大家不要慌，按照提示继续点击下一步，如果最后安装程序退出了，那就从头再来一次，本人恰好遇到crash问题，又来了一遍就可以了。唯一不同的是中间可能会提醒你
+Photoshop-CS6已经存在，选择覆盖安装。这是因为上次安装残留下来了文件造成的。Photoshop-CS6在Wine中已经是非常稳定的版本，安装报错的概率非常小，使用起来也非常稳定。下一节我们介绍Office2013
+这种不稳定软件的时候你才会懂得什么叫痛苦与折磨。</p>
+
+<h1 id="参考">参考</h1>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Xq8ditjQ_bs">How to install Adobe Photoshop CS6 on Ubuntu 16.04</a></li>
+<li><a href="在linux下使用wine安装photoshop cs6">在linux下使用wine安装photoshop cs6</a></li>
+</ul>
+            </article>
+
+            <ul class="pager blog-pager">
+                
+                <li class="previous">
+                    <a href="https://linuxer.io/posts/compiz-fusion/" data-toggle="tooltip" data-placement="top" title="如何在Linux桌面上养鱼">&larr; Previous Post</a>
+                </li>
+                 
+                <li class="next">
+                    <a href="https://linuxer.io/posts/wine-office2013/" data-toggle="tooltip" data-placement="top" title="Linux安装Office2013">Next Post &rarr;</a>
+                </li>
+                
+            </ul>
+            
+            <div>
+                 
+                <h2>See Also</h2>
+                <ul>
+                    
+                    <li><a href="/posts/compiz-fusion/">如何在Linux桌面上养鱼</a></li>
+                    
+                </ul>
+                
+            </div>
+            
+            
+            
+              
+            
+            </div>
+        </div>
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            
+            
+                
+                  
+                  <aside >
+    
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zNjc1MC8xMzI4NQ=="> 
+    	<script type="text/javascript">
+            (function(d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+    
+                if (typeof LivereTower === 'function') { return; }
+    
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+    
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+    	</script>
+        <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+    
+</aside>
+
+                
+            
+        </div>
+    </div>
+    </section>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:caming101006@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/xxx" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/&#43;xxxxx" title="Google&#43;">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/devops007" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/xxx" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/xxx" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/xxx" title="Instagram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://500px.com/xxx" title="500px">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-500px fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://medium.com/@xxx" title="medium">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-medium fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="http://weibo.com/xxx" title="weibo">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="https://linuxer.io/index.xml" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+        &copy;2017-2018
+          
+            
+              <a href="https://linuxer.io">westos</a>
+            
+          
+          
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://linuxer.io/">devops007</a>
+          
+        </p>
+        <p class="credits theme-by text-muted">
+            
+        </p>
+
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.37</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://linuxer.io/js/bootstrap.min.js"></script>
+<script src="https://linuxer.io/js/photoswipe-ui-default.min.js"></script>
+<script src="https://linuxer.io/js/photoswipe.min.js"></script>
+<script src="https://linuxer.io/js/auto-render.min.js"></script>
+<script src="https://linuxer.io/js/main.js"></script> 
+<script src="https://linuxer.io/js/prism.js"></script>
+<script src="https://linuxer.io/js/katex.min.js"></script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script> renderMathInElement(document.body); </script>
+
+
+
+
+
+
+
+  </body>
+</html>
+

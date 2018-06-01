@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on devops007</title>
+    <link>https://linuxer.io/tags/linux/</link>
+    <description>Recent content in Linux on devops007</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>caming101006@gmail.com (westos)</managingEditor>
+    <webMaster>caming101006@gmail.com (westos)</webMaster>
+    <lastBuildDate>Thu, 26 Apr 2018 08:14:31 +0800</lastBuildDate>
+    
+	<atom:link href="https://linuxer.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux安装Office2013</title>
+      <link>https://linuxer.io/posts/wine-office2013/</link>
+      <pubDate>Thu, 26 Apr 2018 08:14:31 +0800</pubDate>
+      <author>caming101006@gmail.com (westos)</author>
+      <guid>https://linuxer.io/posts/wine-office2013/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;如果你习惯了Office办公，比如我的学习笔记是用OneNote记录的。借助PlayOnLinux来完成安装，由于当前wine版本支持最稳定的Office是2010版本，Office2010的安装可以参考上篇&lt;code&gt;Photoshop-CS6&lt;/code&gt;的安装，我们这篇主要介绍如何利用Bash脚本安装不稳定的Office2013，路总是人走出来的，只有大家一起努力，才能让那些不稳定的版本慢慢变得稳定，我们应该参与进去，而不是一味的将希望寄托在别人身上。
+&lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1527487576/System/Wine/Office2013/office2013.logo.png&#34; alt=&#34;office-list&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux安装Photoshop-CS6</title>
+      <link>https://linuxer.io/posts/wine-photoshop-cs6/</link>
+      <pubDate>Wed, 25 Apr 2018 15:17:20 +0800</pubDate>
+      <author>caming101006@gmail.com (westos)</author>
+      <guid>https://linuxer.io/posts/wine-photoshop-cs6/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;code&gt;Photoshop&lt;/code&gt;强大之处自不必多说，假设你拥有一点PS技术，身为IT工作者的你由于工作需要有时会处理一些图片，比如我为自己的博客设计背景图片，这个时候在Linux桌面上拥有一款
+PS软件是非常方便的，虽然Linux环境下拥有替代产品&lt;code&gt;IMP&lt;/code&gt;,但是习惯PS的我还是想在Linux上实现这一目标，由于Windows环境不在考虑范围内，Mac也不是人人都有，但是感谢&lt;code&gt;Wine&lt;/code&gt;社区的努力，让我们
+在Linux环境底下运行&lt;code&gt;.exe&lt;/code&gt;程序不再是梦想，喜欢打游戏的IT人员一定会爱上它的，而且最近我在YouTobe上看到了有人成功移植了LOL。
+&lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1527245761/System/Wine/PhotoShop/Adobe-Photoshop-CS6.png&#34; alt=&#34;CS6&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何在Linux桌面上养鱼</title>
+      <link>https://linuxer.io/posts/compiz-fusion/</link>
+      <pubDate>Wed, 11 Apr 2018 20:50:21 +0800</pubDate>
+      <author>caming101006@gmail.com (westos)</author>
+      <guid>https://linuxer.io/posts/compiz-fusion/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;a href=&#34;http://wiki.compiz.org/&#34;&gt;Compiz&lt;/a&gt; 是第一个由 &lt;a href=&#34;https://zh.wikipedia.org/wiki/OpenGL&#34;&gt;OpenGL&lt;/a&gt;
+ 驱动的运行于 &lt;a href=&#34;https://zh.wikipedia.org/wiki/X_Window_System&#34;&gt;X Window System&lt;/a&gt; 上的混合窗口管理器 。
+ Compiz的混合渲染能力使其可以在窗口管理过程中实现多种视觉效果，比如在矩形虚拟桌面上的窗口最小化。
+ compiz整合了多种特效，最为有趣的是飞雪和养鱼，今天带大家来看看如何在办公桌上养鱼。&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://res.cloudinary.com/devops007/image/upload/v1523446334/cube2.png&#34; alt=&#34;compiz&#34; /&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
