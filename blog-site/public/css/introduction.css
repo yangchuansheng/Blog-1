@@ -1,5 +1,5 @@
 div.instruction {
-    background: url('https://res.cloudinary.com/devops007/image/upload/v1527770472/Home-Page/title.jpg') center center no-repeat;
+    background: url('https://res.cloudinary.com/devops007/image/upload/v1527838119/Home-Page/introduction_1085x333.png') center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -8,25 +8,22 @@ div.instruction {
     width: 100%;
     vertical-align: middle;
     border: none;
+    padding: none;
     max-width: 1085px;
-    max-height: 292px;
-    margin-left: auto;
-    margin-right: auto;
+    min-height: 333px;
+    margin:0 auto 0 auto;
 }
 
-div.well {
+div.my-well {
     background: transparent;
-    border: none;
-    padding-bottom:25px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow:hidden；
+    margin:0 auto 0 auto;
+    overflow: hidden；
 }
 
 div.instruction-text {
-    max-width: 80%;
+    max-width: 70%;
+    padding-top: 5px;
     margin:0 auto 0 auto;
-    padding: none;
 }
 
 div.instruction-text > p {
@@ -35,4 +32,5 @@ div.instruction-text > p {
     padding: none;
     border: none;
     text-indent: 2em;
+    font-weight: bold;
 }
