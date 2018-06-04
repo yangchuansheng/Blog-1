@@ -119,6 +119,12 @@ var main = {
       //var html = '<div id="anchors-navbar"><i class="fa fa-anchor"></i>';
       var html = main.iterativeUI(root, '', '')
       $navigations.html(html)
+      // 调整目录锚点往上偏移导航栏高度的距离。
+      var fixSet = $("#main-navbar").height() + 10;
+      $('nav#TableOfContents a[href^="#"][href!="#"]').click(function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop: $(this.hash).offset().top - fixSet}, 400);
+      });
   },
   
   initImgs : function() {

@@ -367,7 +367,7 @@ gitbook-plugin-anchor-navigation-ex
     <section id="datecount">
         <h4 id="date"> Wed May 23, 2018</h4>
     </section>
-    <h5 id="wc">2600 Words | <i class="fa fa-clock-o" style="color:#000">&nbsp</i>5 Min | 
+    <h5 id="wc">2700 Words | <i class="fa fa-clock-o" style="color:#000">&nbsp</i>6 Min | 
         <span id="busuanzi_container_page_pv">
             <i class="fa fa-eye" style="color:#000"></i>
             
@@ -588,6 +588,8 @@ gitbook-plugin-anchor-navigation-ex
 <li><strong>入口方法，替换模板{{ .TableOfContents }}为新生成ul结构，重新渲染Toc</strong></li>
 </ul>
 
+<p>&emsp;&emsp;<code>注意：</code>由于导航栏固定显示,所以目录锚点需要往上偏移导航栏高度的距离，这里通过js事件来控制滚轴上移。</p>
+
 <pre><code class="language-js">initNavigations: function() {
     var $navigations = $(&quot;#TableOfContents&quot;);
     /* 这是个大坑, 需要大于号&gt;来限制只选择一级子元素，否则会有多组ul被匹配到 */
@@ -597,7 +599,16 @@ gitbook-plugin-anchor-navigation-ex
     }
 
     var html = main.iterativeUI(root, '', '')
+
+    //重新替换Toc模板
     $navigations.html(html)
+
+    //由于导航栏固定,所以调整目录锚点往上偏移导航栏高度的距离
+    var fixSet = $(&quot;#main-navbar&quot;).height() + 10; 
+    $('nav#TableOfContents a[href^=&quot;#&quot;][href!=&quot;#&quot;]').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - fixSet}, 400);
+    }); 
 }
 </code></pre>
 

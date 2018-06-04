@@ -163,6 +163,8 @@ iterativeUI: function(root, template, prefix) {
 
 - __入口方法，替换模板{{ .TableOfContents }}为新生成ul结构，重新渲染Toc__
 
+&emsp;&emsp;`注意：`由于导航栏固定显示,所以目录锚点需要往上偏移导航栏高度的距离，这里通过js事件来控制滚轴上移。
+
 ```js
 initNavigations: function() {
     var $navigations = $("#TableOfContents");
@@ -173,7 +175,16 @@ initNavigations: function() {
     }
 
     var html = main.iterativeUI(root, '', '')
+
+    //重新替换Toc模板
     $navigations.html(html)
+
+    //由于导航栏固定,所以调整目录锚点往上偏移导航栏高度的距离
+    var fixSet = $("#main-navbar").height() + 10; 
+    $('nav#TableOfContents a[href^="#"][href!="#"]').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - fixSet}, 400);
+    }); 
 }
 ```
 
