@@ -607,7 +607,7 @@ gitbook-plugin-anchor-navigation-ex
     var fixSet = $(&quot;#main-navbar&quot;).height() + 10; 
     $('nav#TableOfContents a[href^=&quot;#&quot;][href!=&quot;#&quot;]').click(function(e) {
         e.preventDefault();
-        $('html, body').animate({scrollTop: $(this.hash).offset().top - fixSet}, 400);
+        $('html, body').animate({scrollTop: $(decodeURI(this.hash)).offset().top - fixSet}, 400);
     }); 
 }
 </code></pre>

@@ -123,7 +123,7 @@ var main = {
       var fixSet = $("#main-navbar").height() + 10;
       $('nav#TableOfContents a[href^="#"][href!="#"]').click(function(e) {
           e.preventDefault();
-          $('html, body').animate({scrollTop: $(this.hash).offset().top - fixSet}, 400);
+          $('html, body').animate({scrollTop: $(decodeURI(this.hash)).offset().top - fixSet}, 400);
       });
   },
   
