@@ -24,7 +24,7 @@ algolia = "1eb3f0035ce908e604a469c3d87fdf44" # API key
 LivereShortname = "MTAyMC8zNjc1MC8xMzI4NQ==" # LivereShortname
 #gcse = "012737790962522169780:fd1izxsfgrs" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 description = "linuxer.io|devops007"
-errorpage = "https://res.cloudinary.com/devops007/image/upload/v1528601037/Home-Page/http_404.jpg"
+errorpage = "https://res.cloudinary.com/devops007/image/upload/v1528605758/Home-Page/http_404_2.jpg"
 
 
 [[Params.bigimg]]
