@@ -10,7 +10,7 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
-hello = "Hi,I'm westos"
+hello = "Hi,I'm Alex"
 subtitle = "A wolf from northern China"
 flag = "🇨🇳"
 logo = "https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png"
@@ -24,7 +24,7 @@ algolia = "1eb3f0035ce908e604a469c3d87fdf44" # API key
 LivereShortname = "MTAyMC8zNjc1MC8xMzI4NQ==" # LivereShortname
 #gcse = "012737790962522169780:fd1izxsfgrs" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 description = "linuxer.io|devops007"
-errorpage = "https://res.cloudinary.com/jimmysong/image/upload/images/404-not-found-cat.png"
+errorpage = "https://res.cloudinary.com/devops007/image/upload/v1528601037/Home-Page/http_404.jpg"
 
 
 [[Params.bigimg]]
@@ -34,7 +34,7 @@ desc = "Wolf - North of China -Apr 9 2018"
 
 
 [Author]
-  name = "westos"
+  name = "Alex"
   website = "https://linuxer.io"
   email = "caming101006@gmail.com"
   facebook = "xxx"

@@ -6,8 +6,8 @@
     <description>Recent content in Search on devops007</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <managingEditor>caming101006@gmail.com (westos)</managingEditor>
-    <webMaster>caming101006@gmail.com (westos)</webMaster>
+    <managingEditor>caming101006@gmail.com (Alex)</managingEditor>
+    <webMaster>caming101006@gmail.com (Alex)</webMaster>
     <lastBuildDate>Thu, 24 May 2018 11:15:23 +0800</lastBuildDate>
     
 	<atom:link href="https://linuxer.io/tags/search/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +17,7 @@
       <title>为Hugo设计搜索框</title>
       <link>https://linuxer.io/posts/hugo-search/</link>
       <pubDate>Thu, 24 May 2018 11:15:23 +0800</pubDate>
-      <author>caming101006@gmail.com (westos)</author>
+      <author>caming101006@gmail.com (Alex)</author>
       <guid>https://linuxer.io/posts/hugo-search/</guid>
       <description>&lt;p&gt;&amp;emsp;&amp;emsp;网上对于&lt;code&gt;beautifulhugo&lt;/code&gt;主题的搜索框千篇一律，都是基于modal做的，在了解了&lt;code&gt;algolia&lt;/code&gt;搜索插件的API后，我们基于该插件设计自己的可伸缩搜索框。
 希望可以抛砖引玉，为大家提供一个思路。关于algolia插件的引入这里就不介绍了，网上教程很多。我们主要是美化我们的搜索框风格。
