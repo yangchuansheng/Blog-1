@@ -8,8 +8,8 @@
         "tags": [
             "me"
         ],
-        "subtitle": "westos",
-        "description": "Westos（西部开源） - devops",
+        "subtitle": "Alex",
+        "description": "Alex - devops",
         "nocomment": true,
         "postmeta": false,
         "notoc": true,
@@ -17,7 +17,7 @@
         "bigimg": [
             {
                 "src": "https://res.cloudinary.com/devops007/image/upload/v1523266902/Wolf.jpg",
-                "desc": "Linux lover - westos"
+                "desc": "Linux lover - Alex"
             }
         ]
     },
