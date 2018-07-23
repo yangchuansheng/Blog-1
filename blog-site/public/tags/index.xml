@@ -41,6 +41,15 @@
     </item>
     
     <item>
+      <title>Django</title>
+      <link>https://linuxer.io/tags/django/</link>
+      <pubDate>Tue, 10 Jul 2018 18:56:35 +0800</pubDate>
+      <author>caming101006@gmail.com (Alex)</author>
+      <guid>https://linuxer.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>https://linuxer.io/tags/hugo/</link>
       <pubDate>Thu, 24 May 2018 11:15:23 +0800</pubDate>
@@ -95,11 +104,29 @@
     </item>
     
     <item>
+      <title>Python3</title>
+      <link>https://linuxer.io/tags/python3/</link>
+      <pubDate>Tue, 10 Jul 2018 18:56:35 +0800</pubDate>
+      <author>caming101006@gmail.com (Alex)</author>
+      <guid>https://linuxer.io/tags/python3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Search</title>
       <link>https://linuxer.io/tags/search/</link>
       <pubDate>Thu, 24 May 2018 11:15:23 +0800</pubDate>
       <author>caming101006@gmail.com (Alex)</author>
       <guid>https://linuxer.io/tags/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Signal</title>
+      <link>https://linuxer.io/tags/signal/</link>
+      <pubDate>Tue, 10 Jul 2018 18:56:35 +0800</pubDate>
+      <author>caming101006@gmail.com (Alex)</author>
+      <guid>https://linuxer.io/tags/signal/</guid>
       <description></description>
     </item>
     

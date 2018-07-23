@@ -374,6 +374,42 @@
           
           
             <article class="post-preview">
+              <a href="https://linuxer.io/posts/django-signal/">
+                <h2 class="post-title">post_save VS pre_save VS rewrite_save 哪个更好?</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  
+  Posted on July 10, 2018
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>&emsp;&emsp;<code>post_save</code> vs <code>pre_save</code> 或者处理模型时覆盖<code>save()</code>方法哪个更好？我们来讨论一下。<br/>
+在大多数情况下，我认为<a href="https://docs.djangoproject.com/en/1.10/topics/signals/">Signals</a>是处理模型之间共享数据的最佳方式，假设每个相关模型的CRUD不是一起完成的（即在视图中）。因此，<code>post_save</code>, <code>pre_save</code>, <code>post_delete</code>, <code>pre_delete</code> 等通常是处理任何给定模型实例所依赖的数据的最佳方式,在保存前后操作模型数据（例如使用slugify方法在标题上设置slug）这一点上，信号是专门为此设计的。关于信号另一个好处是你可以在整个项目中连接它们，而不一定只是在定义模型的地方,只需导入模型和您要连接的信号即可。
+</p>
+                  <a href="https://linuxer.io/posts/django-signal/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://linuxer.io/tags/python3/">python3</a>&nbsp;
+                
+                  #<a href="https://linuxer.io/tags/django/">Django</a>&nbsp;
+                
+                  #<a href="https://linuxer.io/tags/signal/">signal</a>&nbsp;
+                
+                </span>
+              
+            </article>
+          
+            <article class="post-preview">
               <a href="https://linuxer.io/posts/hugo-search/">
                 <h2 class="post-title">为Hugo设计搜索框</h2>
                 
@@ -581,6 +617,7 @@ PS软件是非常方便的，虽然Linux环境下拥有替代产品<code>IMP</co
       <div align="center" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
 
+        
         
         
         

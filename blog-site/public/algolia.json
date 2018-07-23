@@ -43,6 +43,26 @@
         ]
     },
     {
+        "title": "post_save VS pre_save VS rewrite_save 哪个更好?",
+        "uri": "posts/django-signal",
+        "content": "emsp  emsp postsave vs presave          save                             Signals                          CRUD                  postsave  presave  postdelete  predelete                                           slugify        slug                                                                             models py django db models signals import pre_save django utils text import slugify yourapp models import YourModel   assuming YourModel isn t defined page def yourreceiverfunction sender  instance  args   kwargs   instance title not instance slug  instance slug   slugify instance title  presave connect yourreceiver_function  sender YourModel                                  presave postsave                        save                           post_save     save                              save                  presave                  save                     save        presave              signal                celery             emsp  emsp     save                signal                                                   save                             save   delete        Django",
+        "objectID": "posts/django-signal",
+        "date": "2018-07-10T10:56:35.000Z",
+        "draft": false,
+        "categories": "python3",
+        "tags": [
+            "python3",
+            "Django",
+            "signal"
+        ],
+        "bigimg": [
+            {
+                "src": "https://res.cloudinary.com/devops007/image/upload/v1531224303/python3/nature.jpg",
+                "desc": "Jul 10,2018"
+            }
+        ]
+    },
+    {
         "title": "为Hugo设计搜索框",
         "uri": "posts/hugo-search",
         "content": "emsp  emsp     beautifulhugo               modal       algolia     API                                           algolia                                               emsp  emsp                                                         emsp  emsp                                                                                                                           emsp  emsp   themes beautifulhugo layouts partials nav html    ul                 search html       isset  Site Params  algolia        partial  search html          end     emsp  emsp search html                       algolia       algolia                                 var client   algoliasearch  X4YB3WOBNV        Site Params algolia       var index   client initIndex  xxxx      document  ready function    new UISearch  document getElementById   sb search           on  input propertychange     sb search input   function     var search_str     this  val    search_str              sb option   empty     else   index search search_str  function  err  contacts       sb option   empty    var   0               contacts hits i  title                  sb option   append _li               css         emsp  emsp search css                                                            beautifulhugo search plugin tar gz    Hugo    Algolia            jQuery",

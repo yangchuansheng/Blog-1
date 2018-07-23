@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python3 on devops007</title>
+    <link>https://linuxer.io/categories/python3/</link>
+    <description>Recent content in Python3 on devops007</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <managingEditor>caming101006@gmail.com (Alex)</managingEditor>
+    <webMaster>caming101006@gmail.com (Alex)</webMaster>
+    <lastBuildDate>Tue, 10 Jul 2018 18:56:35 +0800</lastBuildDate>
+    
+	<atom:link href="https://linuxer.io/categories/python3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>post_save VS pre_save VS rewrite_save 哪个更好?</title>
+      <link>https://linuxer.io/posts/django-signal/</link>
+      <pubDate>Tue, 10 Jul 2018 18:56:35 +0800</pubDate>
+      <author>caming101006@gmail.com (Alex)</author>
+      <guid>https://linuxer.io/posts/django-signal/</guid>
+      <description>&lt;p&gt;&amp;emsp;&amp;emsp;&lt;code&gt;post_save&lt;/code&gt; vs &lt;code&gt;pre_save&lt;/code&gt; 或者处理模型时覆盖&lt;code&gt;save()&lt;/code&gt;方法哪个更好？我们来讨论一下。&lt;br/&gt;
+在大多数情况下，我认为&lt;a href=&#34;https://docs.djangoproject.com/en/1.10/topics/signals/&#34;&gt;Signals&lt;/a&gt;是处理模型之间共享数据的最佳方式，假设每个相关模型的CRUD不是一起完成的（即在视图中）。因此，&lt;code&gt;post_save&lt;/code&gt;, &lt;code&gt;pre_save&lt;/code&gt;, &lt;code&gt;post_delete&lt;/code&gt;, &lt;code&gt;pre_delete&lt;/code&gt; 等通常是处理任何给定模型实例所依赖的数据的最佳方式,在保存前后操作模型数据（例如使用slugify方法在标题上设置slug）这一点上，信号是专门为此设计的。关于信号另一个好处是你可以在整个项目中连接它们，而不一定只是在定义模型的地方,只需导入模型和您要连接的信号即可。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

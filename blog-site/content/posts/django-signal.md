@@ -1,7 +1,7 @@
 ---
 title: "post_save VS pre_save VS rewrite_save 哪个更好?"
 date: 2018-07-10T18:56:35+08:00
-draft: true
+draft: false
 categories: "python3"
 tags: ["python3", "Django", "signal"]
 bigimg: [{src: "https://res.cloudinary.com/devops007/image/upload/v1531224303/python3/nature.jpg", desc: "Jul 10,2018"}]

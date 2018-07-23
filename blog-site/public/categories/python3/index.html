@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title> Categories - linuxer.io|devops007</title>
+  <title> Python3 - linuxer.io|devops007</title>
   <meta name="description" content="linuxer.io|devops007" />
-  <meta property="og:title" content="Categories" />
-  <meta name="twitter:title" content="Categories" />
+  <meta property="og:title" content="Python3" />
+  <meta name="twitter:title" content="Python3" />
   <meta name="author" content="Alex"/>
   <link href='https://res.cloudinary.com/devops007/image/upload/v1523583145/Linux.png' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://res.cloudinary.com/devops007/image/upload/v1523284058/our.png" />
@@ -16,12 +16,12 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@xxx" />
   <meta name="twitter:creator" content="@xxx" />
-  <meta property="og:url" content="https://linuxer.io/categories/" />
+  <meta property="og:url" content="https://linuxer.io/categories/python3/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="devops007" />
 
   <meta name="generator" content="Hugo 0.37" />
-  <link rel="canonical" href="https://linuxer.io/categories/" />
+  <link rel="canonical" href="https://linuxer.io/categories/python3/" />
   <link rel="alternate" href="https://linuxer.io/index.xml" type="application/rss+xml" title="devops007">
   <script src="https://linuxer.io/js/jquery-1.12.4.min.js"></script>
   <link rel="stylesheet" href="https://linuxer.io/css/katex.min.css" />
@@ -274,26 +274,14 @@
 
 
     
-  
-  
-  
-
-
-
-
-  
-
   <header class="header-section ">
-    
     <div class="intro-header no-img">
-      
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-md-offset-0">
-            <div class="categories-heading">
-                <h1 align="center">Categories</h1>
-                
-                
+            <div class="page-heading">
+              <h1>#Python3</h1>
+              <hr class="small">
             </div>
           </div>
         </div>
@@ -301,24 +289,56 @@
     </div>
   </header>
 
-
     
-  
   <div class="container" role="main">
-    <article class="post-preview">
-      <div class="list-group col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
-      
-      <a href="https://linuxer.io/categories/linux/" class="list-group-item">
-          linux<span class="badge">3</span></a>
-      
-      <a href="https://linuxer.io/categories/hugo/" class="list-group-item">
-          hugo<span class="badge">2</span></a>
-      
-      <a href="https://linuxer.io/categories/python3/" class="list-group-item">
-          python3<span class="badge">1</span></a>
-      
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="posts-list">
+          
+            <article class="post-preview">
+              <a href="https://linuxer.io/posts/django-signal/">
+                <h2 class="post-title">post_save VS pre_save VS rewrite_save 哪个更好?</h2>
+
+                
+              </a>
+
+              <p class="post-meta">
+                Posted on July 10, 2018
+              </p>
+              <div class="post-entry">
+                
+                  <p>&emsp;&emsp;<code>post_save</code> vs <code>pre_save</code> 或者处理模型时覆盖<code>save()</code>方法哪个更好？我们来讨论一下。<br/>
+在大多数情况下，我认为<a href="https://docs.djangoproject.com/en/1.10/topics/signals/">Signals</a>是处理模型之间共享数据的最佳方式，假设每个相关模型的CRUD不是一起完成的（即在视图中）。因此，<code>post_save</code>, <code>pre_save</code>, <code>post_delete</code>, <code>pre_delete</code> 等通常是处理任何给定模型实例所依赖的数据的最佳方式,在保存前后操作模型数据（例如使用slugify方法在标题上设置slug）这一点上，信号是专门为此设计的。关于信号另一个好处是你可以在整个项目中连接它们，而不一定只是在定义模型的地方,只需导入模型和您要连接的信号即可。
+</p>
+                  <a href="https://linuxer.io/posts/django-signal/" class="post-read-more">[Read More]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                  
+                    #<a href="https://linuxer.io/tags/python3/">python3</a>&nbsp;
+                  
+                    #<a href="https://linuxer.io/tags/django/">Django</a>&nbsp;
+                  
+                    #<a href="https://linuxer.io/tags/signal/">signal</a>&nbsp;
+                  
+                </span>
+              
+
+            </article>
+          
+        </div>
+        
       </div>
-    </article>
+    <div align="center" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+
+        
+        
+      </div>
+    </div>
   </div>
 
     <footer>
